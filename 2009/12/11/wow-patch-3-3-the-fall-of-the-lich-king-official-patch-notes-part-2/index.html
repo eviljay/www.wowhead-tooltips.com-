@@ -1,0 +1,845 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta name="verify-v1" content="OAhO7aoCPrxJ0IbKnvR9iyj1phClFDk975wsg5ifX6U=" />
+	<title>WoW Patch 3.3 &#8220;The Fall of the Lich King&#8221; Official Patch Notes Part 2 | Wowhead Tooltips</title>
+	<link rel="icon" href="http://www.wowhead-tooltips.com/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://www.wowhead-tooltips.com/favicon.ico" type="image/x-icon" /> 
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="http://www.wowhead-tooltips.com/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://www.wowhead-tooltips.com/comments/feed/" />
+	<link rel="pingback" href="http://www.wowhead-tooltips.com/xmlrpc.php" />
+
+	<!-- style START -->
+	<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/style.css" type="text/css" media="screen" />
+		<!--[if IE]>
+		<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+
+	<!-- default style -->
+			<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/styles/white/default.css" type="text/css" media="screen" title="white" />
+		<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/styles/white/global.css" type="text/css" media="screen" />
+	
+	<!-- others styles -->
+	<!-- style END -->
+
+	<!-- javascript START -->
+		<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/base.js"></script>
+	<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/menu.js"></script>
+	<!-- javascript END -->
+	
+	<!-- Google Prettify -->
+	<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/prettify.js"></script>
+	<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/prettify.css" type="text/css" />
+	<!-- END Google Prettify -->
+	
+	<!-- jquery toggle -->
+	<script type="text/javascript" src="http://wowhead-tooltips.com/js/jquery.js"></script>
+	<script type="text/javascript">
+	function selectMirror(mirror)
+	{
+		jQuery('#mirror').val(mirror);
+	}
+	
+	jQuery.noConflict(); 
+	jQuery(document).ready(function(){
+
+		jQuery('#mirror').change(function()
+		{
+			var flag = '';
+			switch (jQuery('#mirror').val())
+			{
+				case 'us1':
+				case 'us2':
+				case 'us3':
+					flag = 'us.png';
+					break;
+				case 'eu1':
+					flag = 'gb.png';
+					break;
+				case 'eu2':
+					flag = 'de.png';
+					break;
+				case 'eu3':
+					flag = 'nl.png';
+					break;
+				default: break;
+			}
+			jQuery('#mirror_flag').html('<img src="http://wowhead-tooltips.com/wp-content/plugins/downloads/flags/' + flag + '" alt="' + flag + '" />');
+		});
+		
+		jQuery(".toggle_container").hide();
+	
+		jQuery("h1.trigger").toggle(function(){
+			jQuery(this).addClass("active"); 
+			}, function () {
+			jQuery(this).removeClass("active");
+		});
+		
+		jQuery("h1.trigger").click(function(){
+			jQuery(this).next(".toggle_container").toggle();
+		});
+	
+	});
+	</script>
+	<style type="text/css">
+		p.indent {
+			text-indent: 20px;	
+		}
+		html {
+			overflow-Y: scroll;
+		}
+		h2.faqheader {
+			clear: both; 
+			padding-top: 10px;
+		}
+		h1.trigger {
+			font-size: 12px;
+			font-weight: bold;
+			float: left;
+			display: block;
+			clear: both;
+			color: #3B5998;
+			cursor: pointer;
+			padding-left: 25px;
+		}
+		h1.trigger:hover {
+			text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+		}
+		h1.active {
+			background-position: left bottom; 
+			display: block;
+		}
+		.toggle_container {
+			margin: 0 0 5px;
+			padding: 0;
+			overflow: hidden;
+			clear: both;
+			display: none;
+		}
+		
+		tt.faq {
+			font-size: 11px;
+			font-weight: bold;
+			color: #2A4BC1;
+			background-color: #FFF;
+			border: 1px dashed #000;
+			display: block;
+			width: 75%;
+			padding-left: 5px;
+		} 
+		
+		blockquote.tt {
+			font-size: 11px;
+			font-weight: bold;
+			color: #2A4BC1;
+		}
+	</style>
+
+
+		<meta name='Admin Management Xtended WordPress plugin' content='2.1.1' />
+<link rel="alternate" type="application/rss+xml" title="Wowhead Tooltips &raquo; WoW Patch 3.3 &#8220;The Fall of the Lich King&#8221; Official Patch Notes Part 2 Comments Feed" href="http://www.wowhead-tooltips.com/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/feed/" />
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-content/plugins/jquery-lightbox-balupton-edition/js/jquery.lightbox.min.js?ie6_upgrade=false&#038;ver=1.3.7'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-content/plugins/jquery-lightbox-balupton-edition/js/jquery.lightbox.plugin.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.wowhead-tooltips.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.wowhead-tooltips.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Wowhead Tooltips' href='http://www.wowhead-tooltips.com/' />
+<link rel='start' title='Coming Soon!' href='http://www.wowhead-tooltips.com/2009/08/30/coming-soon/' />
+<link rel='prev' title='WoW 3.3 Patch Notes Part 1' href='http://www.wowhead-tooltips.com/2009/12/07/wow-3-3-patch-notes-part-1/' />
+<link rel='next' title='WoW Patch 3.3 &#8220;The Fall of the Lich King&#8221; Official Patch Notes' href='http://www.wowhead-tooltips.com/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes/' />
+<link rel='shortlink' href='http://www.wowhead-tooltips.com/?p=429' />
+
+<!-- All in One SEO Pack 1.6.10.2 by Michael Torbert of Semper Fi Web Design[431,544] -->
+<meta name="description" content="Professions Enchanting Enchant Weapon - Black Magic: This enchantment now sometimes increases haste rating for the caster rather than" />
+<link rel="canonical" href="http://www.wowhead-tooltips.com/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/" />
+<!-- /all in one seo pack -->
+
+<!-- Bad Behavior 2.0.36 run time: 1.649 ms -->
+<script type="text/javascript">
+<!--
+function bb2_addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			oldonload();
+			func();
+		}
+	}
+}
+
+bb2_addLoadEvent(function() {
+	for ( i=0; i < document.forms.length; i++ ) {
+		if (document.forms[i].method == 'post') {
+			var myElement = document.createElement('input');
+			myElement.setAttribute('type', 'hidden');
+			myElement.name = 'bb2_screener_';
+			myElement.value = '1277342641 204.236.235.245';
+			document.forms[i].appendChild(myElement);
+		}
+	}
+});
+// --></script>
+		</head>
+
+
+<body onload="prettyPrint()">
+	<!-- admin START -->
+	<div id="admin-top">
+		<ul id="admin">
+			<li><a href="http://www.wowhead-tooltips.com/wp-login.php?action=register">Register</a></li>			<li><a href="http://www.wowhead-tooltips.com/wp-login.php">Log in</a></li>
+		</ul>
+	</div>
+	<!-- admin END -->
+	
+	<!-- header START -->
+	<div id="header">
+		<div class="inner">
+			<div class="content">
+				<div class="caption">
+					<h1 id="title"><a href="http://www.wowhead-tooltips.com/" title="It&#039;s not a bug, it&#039;s a design feature.">Wowhead Tooltips</a></h1>
+					<div id="tagline">It&#039;s not a bug, it&#039;s a design feature.</div>
+				</div>
+
+				<!-- search box -->
+									<form action="http://www.wowhead-tooltips.com/" id="search_box" method="get">
+						<div id="searchbox">
+							<input type="text" id="searchtxt" class="textfield" name="s" value="" />
+						</div>
+					</form>
+				<script type="text/javascript">
+//<![CDATA[
+	var searchbox = document.getElementById("searchbox");
+	var searchtxt = document.getElementById("searchtxt");
+	var tiptext = "Type text to search here...";
+	if(searchtxt.value == "" || searchtxt.value == tiptext) {
+		searchtxt.className += " searchtip";
+		searchtxt.value = tiptext;
+	}
+	searchtxt.onfocus = function(e) {
+		if(searchtxt.value == tiptext) {
+			searchtxt.value = "";
+			searchtxt.className = searchtxt.className.replace(" searchtip", "");
+		}
+	}
+	searchtxt.onblur = function(e) {
+		if(searchtxt.value == "") {
+			searchtxt.className += " searchtip";
+			searchtxt.value = tiptext;
+		}
+	}
+//]]>
+</script>
+
+				<!-- navigation START -->
+				<ul id="navigation">
+
+					<li class="page_item"><a href="http://www.wowhead-tooltips.com/">Home</a></li>
+					<li class="page_item page-item-5"><a href="http://www.wowhead-tooltips.com/downloads/" title="Downloads">Downloads</a>
+<ul class='children'>
+	<li class="page_item page-item-9"><a href="http://www.wowhead-tooltips.com/downloads/universal/" title="Universal">Universal</a></li>
+	<li class="page_item page-item-11"><a href="http://www.wowhead-tooltips.com/downloads/joomla/" title="Joomla">Joomla</a></li>
+	<li class="page_item page-item-77"><a href="http://www.wowhead-tooltips.com/downloads/item-cache/" title="Item Cache">Item Cache</a></li>
+	<li class="page_item page-item-253"><a href="http://www.wowhead-tooltips.com/downloads/terms-of-use/" title="Terms of Use">Terms of Use</a></li>
+</ul>
+</li>
+<li class="page_item page-item-135"><a href="http://www.wowhead-tooltips.com/tools/" title="Tools">Tools</a>
+<ul class='children'>
+	<li class="page_item page-item-547"><a href="http://www.wowhead-tooltips.com/tools/glossary/" title="Glossary of Terms">Glossary of Terms</a></li>
+	<li class="page_item page-item-390"><a href="http://www.wowhead-tooltips.com/tools/nfl-qb-rating-calculator/" title="NFL QB Rating Calculator">NFL QB Rating Calculator</a></li>
+	<li class="page_item page-item-399"><a href="http://www.wowhead-tooltips.com/tools/nhl-team-points-calculator/" title="NHL Team Points Calculator">NHL Team Points Calculator</a></li>
+	<li class="page_item page-item-121"><a href="http://www.wowhead-tooltips.com/tools/sitedb/" title="Site Database">Site Database</a></li>
+	<li class="page_item page-item-164"><a href="http://www.wowhead-tooltips.com/tools/wordpress/" title="WordPress">WordPress</a>
+	<ul class='children'>
+		<li class="page_item page-item-149"><a href="http://www.wowhead-tooltips.com/tools/wordpress/wp-realm-status/" title="WoW Realm Status Plugin">WoW Realm Status Plugin</a></li>
+		<li class="page_item page-item-201"><a href="http://www.wowhead-tooltips.com/tools/wordpress/linkerator/" title="Linkerator">Linkerator</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-137"><a href="http://www.wowhead-tooltips.com/tools/wow-realm-status/" title="WoW Realm Status">WoW Realm Status</a></li>
+</ul>
+</li>
+<li class="page_item page-item-21"><a href="http://www.wowhead-tooltips.com/contact/" title="About &amp; Contact">About &amp; Contact</a>
+<ul class='children'>
+	<li class="page_item page-item-93"><a href="http://www.wowhead-tooltips.com/contact/donate/" title="Donate">Donate</a></li>
+	<li class="page_item page-item-106"><a href="http://www.wowhead-tooltips.com/contact/installation-service/" title="Installation Service">Installation Service</a></li>
+	<li class="page_item page-item-557"><a href="http://www.wowhead-tooltips.com/contact/hosting/" title="Hosting">Hosting</a></li>
+	<li class="page_item page-item-296"><a href="http://www.wowhead-tooltips.com/contact/credits/" title="Credits">Credits</a></li>
+</ul>
+</li>
+					<li><a rel="external nofollow" title="Documentation Wiki" id="wiki" href="http://wiki.wowhead-tooltips.com">Wiki</a></li>
+					<li><a rel="external nofollow" title="Support Forums." id="forums" href="http://support.wowhead-tooltips.com">Forums</a></li>
+					<li id="subscribe">
+						<a rel="external nofollow" title="Subscribe to this blog..." id="feed" href="http://www.wowhead-tooltips.com/feed/"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/transparent.gif" alt="RSS feed" /></a>
+													<ul>
+								<li class="first"><a rel="external nofollow" title="Subscribe with Youdao" href="http://reader.youdao.com/b.do?url=http://www.wowhead-tooltips.com/feed/"> Youdao</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Xian Guo" href="http://www.xianguo.com/subscribe.php?url=http://www.wowhead-tooltips.com/feed/"> Xian Guo</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Zhua Xia" href="http://www.zhuaxia.com/add_channel.php?url=http://www.wowhead-tooltips.com/feed/"> Zhua Xia</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Google" href="http://fusion.google.com/add?feedurl=http://www.wowhead-tooltips.com/feed/"> Google</a></li>
+								<li><a rel="external nofollow" title="Subscribe with My Yahoo!" href="http://add.my.yahoo.com/rss?url=http://www.wowhead-tooltips.com/feed/"> My Yahoo!</a></li>
+								<li><a rel="external nofollow" title="Subscribe with newsgator" href="http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=http://www.wowhead-tooltips.com/feed/"> newsgator</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Bloglines" href="http://www.bloglines.com/sub/http://www.wowhead-tooltips.com/feed/"> Bloglines</a></li>
+								<li><a rel="external nofollow" title="Subscribe with iNezha" href="http://inezha.com/add?url=http://www.wowhead-tooltips.com/feed/"> iNezha</a></li>
+							</ul>
+											</li>
+
+				</ul>
+				<!-- navigation END -->
+
+			</div>
+		</div>
+	</div>
+	<!-- header END -->
+
+	<div id="container">
+		<div id="content">
+			<div id="main">
+
+
+		
+			<div class="post">
+				<div class="title">
+					<h2>WoW Patch 3.3 &#8220;The Fall of the Lich King&#8221; Official Patch Notes Part 2</h2>
+					<div class="fixed"></div>
+				</div>
+
+				<div class="info">
+					
+					<span>December 11th, 2009</span>
+																<span> | Tags: <a href="http://www.wowhead-tooltips.com/tag/3-3/" rel="tag">3.3</a>, <a href="http://www.wowhead-tooltips.com/tag/icecrown/" rel="tag">icecrown</a>, <a href="http://www.wowhead-tooltips.com/tag/lich-king/" rel="tag">lich king</a>, <a href="http://www.wowhead-tooltips.com/tag/notes/" rel="tag">notes</a>, <a href="http://www.wowhead-tooltips.com/tag/patch/" rel="tag">patch</a>, <a href="http://www.wowhead-tooltips.com/tag/updates/" rel="tag">updates</a>, <a href="http://www.wowhead-tooltips.com/tag/wotlk/" rel="tag">wotlk</a>, <a href="http://www.wowhead-tooltips.com/tag/wow/" rel="tag">wow</a></span>
+					
+					<div class="fixed"></div>
+				</div>
+
+				<div class="content">
+					<img src="http://www.wowhead-tooltips.com/wp-content/uploads/2009/12/lichking.jpg" alt="lichking" title="lichking" width="580" height="261" class="aligncenter size-full wp-image-416" />
+<br /><h3>Professions</h3> 
+<ul> 
+    <li>Enchanting
+    <ul> 
+        <li>Enchant Weapon - Black Magic: This enchantment now sometimes increases haste rating for the caster rather than inflicting the caster&rsquo;s target with a damage-over-time effect. It is also now triggered by landing any harmful spell rather than inflicting damage with a spell.  
+        Enchant Weapon - Unholy: This enchantment now inflicts Shadow damage in addition to its original effect.</li> 
+    </ul> 
+    </li> 
+    <li>First Aid
+    <ul> 
+        <li>The training costs for most bandages have been reduced.</li> 
+    </ul> 
+    </li> 
+    <li>Fishing
+    <ul> 
+        <li>The all-new Kalu&rsquo;ak Fishing Derby, a test of fishing skill with a healthy dash of luck, has come to Northrend! Every Saturday beginning at 2 PM players can try to catch the elusive Blacktip Shark. Elder Clearwater sits in Dalaran for one hour awaiting the return of the quickest, most experienced fisher to bring him this shark. This champion fisher will be rewarded in-kind for returning with the first catch. Those who aren&rsquo;t able to return with the first catch will still receive just reward for getting the Blacktip Shark to Elder Clearwater before he takes his leave. It is said that these sharks&rsquo; favorite meal are the bite-sized Pygmy Suckerfish. Perhaps a hook in their waters will do the trick.</li> 
+    </ul> 
+    </li> 
+    <li>Mining
+    <ul> 
+        <li>Enchanted Thorium: This ability now uses the Mining skill and is learned from trainers at a skill level of 250.</li> 
+    </ul> 
+    </li> 
+</ul> 
+ 
+<br /><h3>Quests</h3> 
+<ul> 
+    <li>Weekly raid quests are now available from Archmage Lan'dalock in Dalaran. Every Tuesday at 3 AM the Council of Six will choose a different strategic target that must die from either: The Obsidian Sanctum, Naxxramas, The Eye of Eternity, Ulduar, Trial of the Crusader, or Icecrown Citadel.</li> 
+    <li>For the various Icecrown Bomber quests at Aldur'thar: The Desolation Gate, players can now choose to eject from their bomber seats mid-run. If you do so, a rescue vehicle will transport your character back to the safety of your infra-green platform.</li> 
+    <li>Azure Drakes and Dragons will now attack back when attacked by characters not riding Wyrmrest Defenders.</li> 
+    <li>Brittle Revenants, quest creatures fought for the Sons of Hodir daily quest &ldquo;Hot and Cold,&rdquo; no longer cast Shield Slam.</li> 
+</ul> 
+ 
+<br /><h3>Achievements</h3> 
+<ul> 
+    <li>The Achievements to get exalted with the Warsong Gulch, Arathi Basin, and Alterac Valley factions have been removed from their respective &ldquo;Master of&rdquo; Meta-Achievements. Special titles will be offered to those who reach exalted with these factions.</li> 
+    <li>&ldquo;The Party&rsquo;s Over&rdquo; has been removed from Achievements and is no longer a part of the &ldquo;Glory of the Hero&rdquo; Meta-Achievement.</li> 
+    <li>&ldquo;Maste<wbr></wbr>r Angler of Stranglethorn&rdquo; has been changed to &ldquo;Master Angler of Azeroth&rdquo; and can be achieved by winning either the Kalu'ak Fishing Derby or the Stranglethorn Fishing Extravaganza.</li> 
+</ul> 
+ 
+<br /><h3>Reputation</h3> 
+<ul> 
+    <li>Commendation Badges which award reputation with various Wrath of the Lich King factions can be purchased with Emblems of Triumph in Dalaran. Each badge costs 1 Emblem of Triumph.</li> 
+    <li>Gaining reputation with the Ashen Verdict in Icecrown Citadel will grant players access to upgradeable rings from Ormus the Penitent. Players can switch between the type of ring (melee/caster/tank/h<wbr></wbr>ealer) at any point in the upgrade path for 200g.</li> 
+    <li>The following reputations have been sped up by roughly 30%:
+    <ul> 
+        <li>Argent Crusade</li> 
+        <li>Alliance Vanguard</li> 
+        <li>Horde Expedition</li> 
+        <li>Kirin Tor</li> 
+        <li>Knights of the Ebon Blade</li> 
+        <li>Sons of Hodir</li> 
+        <li>Wyrmrest Accord</li> 
+    </ul> 
+    </li> 
+    <li>Sons of Hodir quests now give more reputation overall.</li> 
+    <li>Top-level helm and shoulder faction-related enchants are now available as Bind-on-Account items that do not require any faction to use once purchased (they still require the appropriate faction level to purchase).</li> 
+</ul> 
+ 
+<br /><h3>Items</h3> 
+<ul> 
+    <li>Arena Set Bonuses: The two-piece set bonus for all Wrath of the Lich King Arena sets now provides 100 resilience and 29 spell power or 50 attack power. The current four-piece bonus will remain, however it also now provides 88 spell power or 150 attack power.</li> 
+    <li>Bind-on-Acco<wbr></wbr>unt Items: Players can now mail Bind-on-Account items to characters on the same account and realm regardless of faction. Please note this only applies to Bind-on-Account items. Other items or gold cannot be sent via mail to characters on the same realm and account if they are from differing factions.</li> 
+    <li>Death Knight Tier-9 4-Piece Bonus (Damage-Dealing): This set bonus no longer grants Frost Fever a chance to be a critical strike. It still grants that possibility to Blood Plague.</li> 
+    <li>Glyphs
+    <ul> 
+        <li>Death Knights
+        <ul> 
+            <li>Glyph of Icy Touch: Instead of granting additional runic power, this glyph now causes Frost Fever to deal 20% additional damage.</li> 
+        </ul> 
+        </li> 
+        <li>Druids
+        <ul> 
+            <li>Glyph of Rapid Rejuvenation: This glyph allows for the druid&rsquo;s haste to reduce the time between the periodic healing effects of Rejuvenation.</li> 
+        </ul> 
+        </li> 
+        <li>Mages
+        <ul> 
+            <li>Glyph of Improved Scorch: Renamed Glyph of Scorch. This glyph now increases the damage of Scorch by 20%.</li> 
+            <li>Glyph of Eternal Water: This glyph allows for a summoned Water Elemental to last indefinitely, but it can no longer cast Freeze.</li> 
+        </ul> 
+        </li> 
+        <li>Priests
+        <ul> 
+            <li>Glyph of Mind Flay: This glyph now increases the damage done by Mind Flay by 10% when the target is afflicted with Shadow Word: Pain.</li> 
+            <li>Glyph of Shadow Word: Pain: The periodic damage ticks of Shadow Word: Pain now restore 1% of the priest&rsquo;s base mana with this glyph.</li> 
+            <li>Glyph of Shadow: While in Shadowform, this glyph causes non-periodic spell critical strikes to increase spell power by 30%, up from 10%, of the priest&rsquo;s total spirit for 10 seconds.</li> 
+        </ul> 
+        </li> 
+        <li>Shamans
+        <ul> 
+            <li>Glyph of Fire Nova Totem: Renamed Glyph of Fire Nova. This glyph now reduces the cooldown of Fire Nova by 3 seconds.</li> 
+        </ul> 
+        </li> 
+        <li>Warlocks
+        <ul> 
+            <li>Glyph of Life Tap: The effect of this glyph now has a chance of activating when Dark Pact is used.</li> 
+            <li>Glyph of Quick Decay: This glyph allows for the warlock&rsquo;s haste to reduce the time between periodic damage effects of Corruption.</li> 
+        </ul> 
+        </li> 
+        <li>Warriors
+        <ul> 
+            <li>Glyph of Victory Rush: This glyph now increases the critical strike chance of Victory Rush by 30%, regardless of the percentage of the target&rsquo;s remaining health.</li> 
+        </ul> 
+        </li> 
+    </ul> 
+    </li> 
+    <li>Haris Pilton now sells a new 24-slot bag! She has stubbornly decided to remain in Shattrath City, so those interested should seek her out there.</li> 
+    <li>Icecrown Citadel Items: Normal and Heroic versions of Icecrown Citadel rings and trinkets are considered Unique-Equipped and cannot be used at the same time.</li> 
+    <li>Hatchlings: Leaping, Darting, Razormaw, and Ravasaur Hatchlings no longer drop from their associated rare creatures. Instead, there are now rare nests that spawn which contain these hatchlings. For example, the Leaping Hatchling can now be found in Takk&rsquo;s Nest rather than as a drop from Takk the Leaper.</li> 
+    <li>Sceptor of Celebras: Since this item is no longer needed as a key, Celebras will no longer give one out to a player who loses it. The item can now be sold or disenchanted as normal.</li> 
+    <li>Shaman Tier-9 4-Piece Set Bonus (Elemental): This set bonus now does an additional 10% of Lava Burst&rsquo;s initial damage over time instead of increasing the size of the Lava Burst.</li> 
+</ul> 
+<span id="more-429"></span>
+<br /><h3>Bug Fixes</h3> 
+<ul> 
+    <li>Items
+    <ul> 
+        <li>Ancient Pickled Egg: This item can no longer be triggered by Life Tap.</li> 
+        <li>Brutal Hauberk: The tooltip on this item no longer references granting energy (as energy-based classes cannot equip it).</li> 
+        <li>Costumes: Various costumes from holidays, items, and quests that previously were cancelled by getting on a mount will now cause an error message when the player attempts to mount instead of cancelling the costume.</li> 
+        <li>Carapace of the Old God: Now tradable using the Bind-on-Pickup trade system.</li> 
+        <li>Crystalforge<wbr></wbr>d Trinket: Can now be refunded at its vendor.</li> 
+        <li>Dragonslayer Set: No longer displays a duration on the Nature&rsquo;s Ally buff.</li> 
+        <li>Drums of the Forgotten Kings: The buff from this item will no longer be cancelled when the player who used the item swaps talent specializations.</li> 
+        <li>Drums of the Wild: The buff from this item will no longer be cancelled when the player who used the item swaps talent specializations.</li> 
+        <li>Eating and Drinking: Eating and drinking are now cancelled and prevented while in a vehicle as a passenger.</li> 
+        <li>Figurine: Emerald Owl: Now grants mana properly to druids in Bear Form, Cat Form, and Dire Bear Form.</li> 
+        <li>Figurine: Talasite Owl: Now grants mana properly to druids in Bear Form, Cat Form, and Dire Bear Form.</li> 
+        <li>Fire Hardened Hauberk: The tooltip on this item no longer references granting energy (as energy-based classes cannot equip it).</li> 
+        <li>Giantstalker Set: No longer displays a duration on the Nature&rsquo;s Ally buff.Glyph of Immolation Trap: Now properly increases damage by 100%.</li> 
+        <li>Gul&rsquo;da<wbr></wbr>n&rsquo;s Regalia Set: Tooltip corrected to indicate increased damage for all pet attacks, not just abilities.</li> 
+        <li>Husk of the Old God: Now tradable using the Bind-on-Pickup trade system.</li> 
+        <li>Idol of Flaring Growth: Now has a detailed combat log tooltip.</li> 
+        <li>Idol of Lunar Fury: Now has a detailed Combat log tooltip.</li> 
+        <li>Idol of The Corruptor: Now has a detailed Combat log tooltip.</li> 
+        <li>Insignia of the Alliance: Item level changed to 60.</li> 
+        <li>Insignia of the Horde: Item level changed to 60.</li> 
+        <li>Level 58 PvP Items: A variety of PvP items with a minimum level of 58 were not being translated properly when a player used the Paid Faction Change service. That has been corrected. Paladin- and shaman-specific items still will not be translated, as there is no opposite version to translate them into.</li> 
+        <li>Liadrin&rsquo;<wbr></wbr>s Plate Set: No longer incorrectly reduces the cooldown on Divine Shield.</li> 
+        <li>Lightning Capacitor: Combat log tooltip for Electrical Charge updated to include more detailed information.</li> 
+        <li>Nightsong Regalia Set: The bonus to Rejuvenation from this set will now work properly with the Idol of Rejuvenation equipped. In addition, the instant heal provided now has a correct combat log tooltip.</li> 
+        <li>Noggenfogger Elixir: Players shrunk while under the effects of this item will now be able to mount.</li> 
+        <li>Quel&rsquo;d<wbr></wbr>orei Channeling Rod: Spelling error corrected.</li> 
+        <li>Quel&rsquo;d<wbr></wbr>orei Sash: Spelling error corrected.</li> 
+        <li>Quel&rsquo;d<wbr></wbr>orei Guard: Spelling error corrected.</li> 
+        <li>Qiraji Bindings of Command: Now tradable using the Bind-on-Pickup trade system.</li> 
+        <li>Qiraji Bindings of Dominance: Now tradable using the Bind-on-Pickup trade system.</li> 
+        <li>Reclaimed Shadowstrike: No longer has a cooldown to create Reclaimed Thunderstrike.</li> 
+        <li>Reinforced Shadowstrike: No longer has a cooldown to create Reinforced Thunderstrike.</li> 
+        <li>Reins of the Swift Frostsaber: The mount learned from this item no longer triggers a global cooldown.</li> 
+        <li>Runescroll of Fortitude: The buff from this item will no longer be cancelled when the player who used the item swaps talent specializations.</li> 
+        <li>Seaspray Albatross: Now grants mana properly to druids in Bear Form, Cat Form, and Dire Bear Form.</li> 
+        <li>Sigil of Virulence: Now has a detailed combat log tooltip.</li> 
+        <li>Solace of the Defeated: Can no longer be triggered by spells with a base cost of 0.</li> 
+        <li>Solace of the Fallen: Can no longer be triggered by spells with a base cost of 0.</li> 
+        <li>Spirit of Eskhandar Set: This set no longer requires Eskhandar&rsquo;s Collar to complete (that item can no longer be acquired).</li> 
+        <li>Swift Horde Wolf: The mount learned from this item no longer triggers a global cooldown.</li> 
+        <li>The Egg of Mortal Essence: This item can no longer be triggered by Life Tap.</li> 
+        <li>Tier 2 Helmets: Looting these items from Nefarion in Blackwing Lair will no longer trigger the Onyxia&rsquo;s Lair (level 60) Feat of Strength achievement.</li> 
+        <li>Totem of Quaking Earth: This totem will no longer sometimes grant unintended bonus healing.</li> 
+        <li>Turalyon&rsquo;<wbr></wbr>s Plate Set: No longer incorrectly reduces the cooldown on Divine Shield.</li> 
+        <li>Veklor&rsquo;<wbr></wbr>;s Diadem: Now tradable using the Bind-on-Pickup trade system.</li> 
+        <li>Warmth of Forgiveness: Now grants mana properly to druids in Bear Form, Cat Form, and Dire Bear Form.</li> 
+        <li>Windrunner Set: The set bonus which grants Greatness to the hunter&rsquo;s pet will no longer spuriously show the hunter also gaining that buff.</li> 
+        <li>Worldbreaker Garb Set: The Electrified effect caused by this set now has detailed combat log tooltips.</li> 
+    </ul> 
+    </li> 
+    <li>Racial Abilities
+    <ul> 
+        <li>Arcane Torrent: Updated tooltip to include the functionality that this ability also interrupts spellcasting on NPCs. In addition, this ability will now be properly noted and displayed as an interrupt in the cast bar UI.</li> 
+        <li>Every Man for Himself: Disconnecting while rooted will no longer sometimes trigger this ability.</li> 
+    </ul> 
+    </li> 
+    <li>Classes
+    <ul> 
+        <li>Death Knights
+        <ul> 
+            <li>Bloody Strikes: Now properly increases the damage displayed in the tooltips of Blood Strike and Heart Strike.</li> 
+            <li>Bone Shield: Tooltip corrected to indicate the player has the correct number of bones.</li> 
+            <li>Chains of Ice: This ability will no longer appear to land on targets which are immune.</li> 
+            <li>Desecration: The debuff from this ability will no longer sometimes appear as if it were cast by someone else. In addition, the visual and snare from this ability will now both dissipate at the same time. Further, this talent will now respect snare immunities, and no longer sometimes snare immune targets.</li> 
+            <li>Frost Presence: The animation for activating this presence will no longer also have the animation for Blood Presence played at the same time.</li> 
+            <li>Glyph of Bone Shield: Now updates the number of charges in the Bone Shield tooltip.</li> 
+            <li>Glyph of Dark Death: Now updates the tooltip on Death Coil. In addition, its own tooltip has been clarified to indicate it also applies to healing from Death Coil.</li> 
+            <li>Glyph of Death&rsquo;s Embrace: Now updates the tooltip on Death Coil to indicate runic power is refunded.</li> 
+            <li>Glyph of Heart Strike: Now updates the tooltip on Heart Strike to indicate Heart Strike applies a movement snare.</li> 
+            <li>Glyph of Icebound Fortitude: Now updates the tooltip on Icebound Fortitude to show increased damage reduction.</li> 
+            <li>Glyph of Plague Strike: Now updates the damage shown in Plague Strike&rsquo;s tooltip.</li> 
+            <li>Glyph of Unbreakable Armor: Now updates the tooltip on Unbreakable Armor. Tooltip on glyph modified to make its effect more clear as well.</li> 
+            <li>Master of Ghouls: Tooltip typo corrected.</li> 
+            <li>Night of the Dead: Tooltip typo corrected.</li> 
+            <li>Obliterate: This ability will no longer sometimes fail to do additional damage based on diseases on the target.</li> 
+            <li>Raise Ally: While this spell is active on a target, they will not be sent to the graveyard, prematurely ending the spell.</li> 
+            <li>Raise Dead: It is no longer possible under some circumstances to use a Risen Ghoul to cause neutral guards to attack opposite faction players.</li> 
+            <li>Strangulate: Updated tooltip to include the functionality that this ability also interrupts spellcasting on NPCs.</li> 
+            <li>Taste of Blood: Corrected inaccurate information in combat log tooltip.</li> 
+            <li>Unholy Presence: The animation for activating this presence will no longer also have the animation for Blood Presence played at the same time.</li> 
+        </ul> 
+        </li> 
+        <li>Druids
+        <ul> 
+            <li>Glyph of Hurricane: Now modifies the spell tooltip on Hurricane to indicate the spell also applies a movement slowing effect.</li> 
+            <li>Hurricane: When cast from Bear Form, Cat Form, or Dire Bear Form, this spell will now channel properly instead of stopping the channel as soon as the shapeshift is cancelled.</li> 
+            <li>Infected Wounds: This ability is no longer considered to be in the magical defense category; therefore spell hit no longer applies to its activation. Tooltip error corrected.</li> 
+            <li>Nature's Grace: The tooltip now correctly indicates that it will not be activated from periodic spell critical strikes.</li> 
+            <li>Swipe (Bear): Tooltip corrected to display 8 yard range.</li> 
+            <li>Rejuvenation<wbr></wbr>: Druids will no longer get a more powerful spell error message when attempting to overwrite a Rejuvenation they cast.</li> 
+        </ul> 
+        </li> 
+        <li>Hunters
+        <ul> 
+            <li>Concussive Barrage: This ability is no longer subject to spell reflects.</li> 
+            <li>Explosive Trap: The damage from this trap will now scale properly with the hunter&rsquo;s attack power.</li> 
+            <li>Glyph of Immolation Trap: Now properly increases damage by 100%. In addition, this glyph will now modify the tooltip of Immolation Trap correctly.</li> 
+            <li>Glyph of Mending: This glyph will now modify the amount healed in the tooltip on Mend Pet.</li> 
+            <li>Point of No Escape: It is no longer possible to gain benefit from this talent multiple times by having a target affected by multiple of the same hunter&rsquo;s traps. In addition, Freezing Arrow will no longer incorrectly provide a critical strike bonus to players beyond the hunter with this talent.</li> 
+            <li>Roar of Sacrifice: Corrected tooltip error.</li> 
+            <li>Silencing Shot: Updated tooltip to include the functionality that this ability also interrupts spellcasting on NPCs.</li> 
+            <li>Volley: The tooltip for this ability will now update properly from haste.</li> 
+        </ul> 
+        </li> 
+    </ul> 
+    </li> 
+</ul> 
+<br /><h3>Bug Fixes</h3> 
+<ul> 
+    <li>Classes  
+    <br /><h3>Mac Client Changes and Fixes</h3> 
+    <ul> 
+        <li>Mages  
+        <ul> 
+            <li>Arcane Concentration: The interaction of this talent with Arcane Missiles has been restructured. Instead of an Arcane Missiles cast triggering the talent, each missile has an independent (but reduced) chance to trigger this talent. In addition, the talent will no longer sometimes be triggered from misses by Arcane Missiles, Arcane Blast, and Blizzard.</li> 
+            <li>Blast Wave: Tooltip typo corrected.</li> 
+            <li>Blizzard: The tooltip on this ability will now update properly from all talents which increase its damage by a percentage. Also fixed a bug where some trinkets were not triggered by this spell.</li> 
+            <li>Cone of Cold: The tooltip on this ability will now update properly from all talents which increase its damage by a percentage.</li> 
+            <li>Dalaran Intellect: Mages will now be properly blocked from casting this spell when the target has a more powerful version of the buff.</li> 
+            <li>Deep Freeze: This spell will no longer consume two charges of Fingers of Frost when it misses its target.</li> 
+            <li>Flame Strike: Some ranks of this spell had an incorrect cast time of 3 seconds. All ranks now share a 2-second cast time.</li> 
+            <li>Frost Nova: The tooltip on this ability will now update properly from all talents which increase its damage by a percentage.</li> 
+            <li>Frostbolt: The tooltip on this ability will now update properly from all talents which increase its damage by a percentage.</li> 
+            <li>Glyph of Mirror Image: Now updates the tooltip on Mirror Image to show 4 images are summoned.</li> 
+            <li>Ignite: Now correctly benefits from the dispel resistance granted by the Arcane Subtlety talent. In addition, this talent will now properly include in its damage calculation any damage of the initial fire critical strike that was absorbed.</li> 
+            <li>Ice Lance: The tooltip on this ability will now update properly from all talents which increase its damage by a percentage.</li> 
+            <li>Improved Scorch: This talent no longer causes a bug that removes all resilience from pets.</li> 
+            <li>Mirror Image: The mirror images summoned will no longer sometimes appear as shades before taking on the appearance of the casting mage.</li> 
+            <li>Prismatic Cloak: Rank three of this talent will now properly modify the tooltip on Invisibility to indicate the effect is instant.</li> 
+            <li>Slow Fall: This spell can now activate trinkets that can trigger from casting a helpful spell.</li> 
+            <li>Winter&rsquo;<wbr></wbr>;s Chill: This talent no longer causes a bug that removes all resilience from pets.</li> 
+        </ul> 
+        </li> 
+        <li>Paladins  
+        <ul> 
+            <li>Aura Mastery: The animation for this ability will no longer be extra bright when used with Concentration Aura active.</li> 
+            <li>Beacon of Light: The effect of this ability will no longer sometimes continue past the duration of its buff. In addition, the duration when used with the Glyph of Beacon of light will now correctly be 1.5 minutes. Finally, the tooltip was corrected to indicate benefitting targets must be in the paladin&rsquo;s party or raid.</li> 
+            <li>Blessing of Kings: It is no longer possible to have multiple buff icons from this spell.</li> 
+            <li>Blessing of Sacrifice: Damage transferred via this ability can now be prevented by damage absorption effects.</li> 
+            <li>Blessing of Sanctuary: It is no longer possible to have multiple buff icons from this spell. In addition, the tooltip has been corrected to include 10% increased strength.</li> 
+            <li>Devotion Aura: When in a party with another paladin using a different rank of this ability, it is no longer possible to see two different Devotion Aura icons displayed as buffs.</li> 
+            <li>Divine Sacrifice: This ability now properly counts all damage transferred against its limit, instead of not counting some damage.</li> 
+            <li>Greater Blessing of Kings: It is no longer possible to have multiple buff icons from this spell.</li> 
+            <li>Greater Blessing of Sanctuary: It is no longer possible to have multiple buff icons from this spell. In addition, the tooltip has been corrected to include 10% increased strength.</li> 
+            <li>Guardian&rsquo;<wbr></wbr>s Favor: Corrected a tooltip error in rank 1 of this ability.</li> 
+            <li>Hand of Freedom: It is no longer possible to use this ability while under the effects of the druid spell Cyclone. In addition, disconnecting while rooted will no longer sometimes trigger casting this on oneself.</li> 
+            <li>Hand of Reckoning: Tooltip clarified to indicate taunt immune targets will not take damage from this ability.</li> 
+            <li>Hand of Sacrifice: Damage transferred via this ability can now be prevented by damage absorption effects.</li> 
+            <li>Heart of the Crusader: The effect of this talent is now always removed when the target no longer has an active Judgement debuff.</li> 
+            <li>Judgements of the Just: The effect of this talent is now always removed when the target no longer has an active Judgement debuff.</li> 
+            <li>Judgement of Righteousness: The damage from this ability will no longer sometimes increase when the paladin&rsquo;s agility increases (only occurred with low strength and high agility).</li> 
+            <li>Judgement of Wisdom: Corrected incorrect information in the combat log tooltip.</li> 
+            <li>Retribution Aura: It is no longer possible under some circumstances for the UI to display buffs from two different ranks of this ability.</li> 
+            <li>Seal of Corruption: Tooltip corrected to list the actual amount of damage done instead of a higher number.</li> 
+        </ul> 
+        </li> 
+        <li>Priests  
+        <ul> 
+            <li>Glyph of Power Word: Shield: The heal caused by this glyph will now correctly use the casting priest&rsquo;s critical strike chance instead of the target&rsquo;s.</li> 
+            <li>Inspiration: The tooltip now correctly indicates that it also functions with Prayer of Mending.</li> 
+            <li>Levitate: This spell can now activate trinkets that can trigger from casting a helpful spell.</li> 
+            <li>Mass Dispel: Some trinkets which were not triggered properly by this spell will now work correctly when Mass Dispel is cast.</li> 
+            <li>Mind Flay: The rank 1 tooltip has been corrected to indicate the accurate damage and snare effect. In addition, this ability will now work correctly with [target=focus] and [target=mouseover] macros.</li> 
+            <li>Prayer of Mending: Inspiration and Divine Aegis can no longer be incorrectly triggered by this spell for priests who do not have those talents.</li> 
+            <li>Silence: Updated tooltip to include the functionality that this ability also interrupts spellcasting on NPCs.</li> 
+            <li>Spirit Tap: This talent can no longer be triggered by the death of the priest&rsquo;s Jewelcrafter Stone Statues.</li> 
+        </ul> 
+        </li> 
+        <li>Rogues  
+        <ul> 
+            <li>Ambush: The tooltip on this ability will now update properly from talents which increase its damage by a percentage.</li> 
+            <li>Backstab: The tooltip on this ability will now update properly from talents which increase its damage by a percentage.</li> 
+            <li>Deadly Poison: Another rogue using a higher rank of this poison will no longer prevent the lower rank Deadly Poison from being applied to the target.</li> 
+            <li>Eviscerate: The tooltip on this ability will now update properly from talents which increase its damage by a percentage.</li> 
+            <li>Glyph of Rupture: Now updates the duration on Rupture&rsquo;s tooltip.</li> 
+            <li>Killing Spree: Entering a vehicle will now cause this ability to halt, and attempting to use it while on a vehicle will result in an error message.</li> 
+            <li>Mutilate: The tooltip on this ability will now update properly from talents which increase its damage by a percentage. In addition, the damage from this ability can now be blocked.</li> 
+            <li>Sinister Strike: The tooltip on this ability will now update properly from talents which increase its damage by a percentage.</li> 
+            <li>Slice and Dice: Improved Slice and Dice and Glyph of Slice and Dice now update the duration of this ability.</li> 
+            <li>Throwing Specialization: Deadly Throw will no longer cause multiple spell interruption combat log entries when used with this talent.</li> 
+        </ul> 
+        </li> 
+        <li>Shamans  
+        <ul> 
+            <li>Glyph of Earthliving Weapon: Now updates the tooltip for Earthliving Weapon.</li> 
+            <li>Glyph of Lesser Healing Wave: Tooltip and functionality corrected to ensure this glyph will cause extra healing from Lesser Healing Wave regardless of which shaman cast Earth Shield on the target.</li> 
+            <li>Hex: Players are no longer able to use Battlemaster trinkets while under the effects of this spell.</li> 
+            <li>Mana Tide Totem: The tooltip on this spell will now be modified properly by the Glyph of Mana Tide Totem.</li> 
+            <li>Thunderstorm<wbr></wbr>: It is no longer possible to use this ability while under the effects of the Druid spell Cyclone.</li> 
+        </ul> 
+        </li> 
+        <li>Warlocks
+        <ul> 
+            <li>Conflagrate: This spell will no longer benefit inconsistently from the talents Emberstorm and Improved Immolate, as well as the Glyph of Immolate and Tier 9 set bonus. Just as for Immolate, all stacking percentage increases will be applied additively instead of multiplicatively ( 10% and 20% make 30% instead of 32%). In addition, Conflagrate used with Shadowflame will now scale properly from spell power.</li> 
+            <li>Curse of the Elements: Rank 4 has been increased to 11%, up from 10%.</li> 
+            <li>Drain Soul: This spell now deals 4 times the normal damage for all ranks. Previously it was only ranks 6 and above.</li> 
+            <li>Glyph of Conflagrate: Now updates the tooltip of Conflagrate to remove reference to Conflagrate removing an Immolate or Shadowflame effect on the target.</li> 
+            <li>Glyph of Siphon Life: This glyph will now modify the tooltip on Siphon Life correctly.</li> 
+            <li>Glyph of Unending Breath: Now updates the tooltip on Unending Breath to indicate it increases swim speed.</li> 
+            <li>Hellfire: Dealing damage to another player with this ability will now put the Warlock in combat.</li> 
+            <li>Improved Shadow Bolt: This talent no longer causes a bug that removes all resilience from pets.</li> 
+            <li>Soul Link: Damage transferred via this ability can now be prevented by damage absorption effects.</li> 
+            <li>Suffering (Voidwalker): Ranks 5-8 had the incorrect taunt radius of 5 yards and have all been adjusted to a 10-yard radius.</li> 
+        </ul> 
+        </li> 
+        <li>Warriors
+        <ul> 
+            <li>Blood Frenzy: This debuff is no longer considered a Bleed effect that can be removed separately from the actual Bleed effect which caused it.</li> 
+            <li>Bloodrage: Tooltip now adjusts to show effect of Anger Management on this ability.</li> 
+            <li>Glyph of Cleaving: Now updates the tooltip of Cleave to show that more targets are struck by the ability.</li> 
+            <li>Glyph of Hamstring: Now updates the tooltip of Hamstring to indicate it has a chance to immobilize.</li> 
+            <li>Glyph of Vigilance: Now updates the tooltip on Vigilance to show that more threat is transferred.</li> 
+            <li>Mocking Blow: Tooltip clarified to indicate taunt immune targets will not take damage from this ability.</li> 
+            <li>Rampage: Rampage now behaves correctly as an Enrage effect when interacting with the Enraged Regeneration ability.</li> 
+            <li>Recklessness<wbr></wbr>: Heroic Throw and Shattering Throw will now benefit from this ability and consume charges of this ability. In addition, Recklessness now behaves correctly as an Enrage effect when interacting with the Enraged Regeneration ability.</li> 
+            <li>Sudden Death: Corrected inaccurate information in combat log tooltip.</li> 
+            <li>Sweeping Strikes: Corrected inaccurate information in combat log tooltip.</li> 
+            <li>Vigilance: The threat transfer granted by this ability will now reactivate when Tricks of the Trade or Misdirection cast by the Vigilance target expires.</li> 
+            <li>Warbringer: Tooltip typo corrected.</li> 
+        </ul> 
+        </li> 
+        <li>Game Systems
+        <ul> 
+            <li>Target Effects: When this UI feature is activated, Fear, Silence, Frostbolt, and Hamstring will all now display text over the target&rsquo;s head indicating what type of effect has been applied.</li> 
+        </ul> 
+        </li> 
+        <li>Battleground<wbr></wbr>s
+        <ul> 
+            <li>Strand of the Ancients
+            <ul> 
+                <li>The &ldquo;Let the Battle for the Strand of the Ancients&rdquo; message should no longer appear twice in round 2. It also now appears correctly at the beginning of round 1.</li> 
+                <li>Storm the Beach should now be correctly granted to the Horde when they start round 1 on offense.</li> 
+                <li>The east Antipersonnel Cannon at the Amethyst gate should no longer be able to shell the graveyard flag.</li> 
+                <li>Fixed an order of operations issue where players would sometimes not be resurrected or clear their Inactive debuff at the end of the 1st round.</li> 
+            </ul> 
+            </li> 
+        </ul> 
+        </li> 
+    </ul> 
+     
+    <br /><h3>Mac Client Changes and Fixes</h3></li> 
+    <li>Rewrote OpenGL implementation for Intel Macs with Mac OS X 10.5.7 or later.</li> 
+    <li>Fixed an issue with TrackPad scrolling on Macbooks/Macbook Pros behaving erratically.</li> 
+    <li>Fixed the lightning effect on Thorim's hammer in Ulduar.</li> 
+    <li>Fixed a crash that could occur on low-end Macs during the second phase of The Black Knight encounter.</li> 
+    <li>Fixed a crash when recording in-game movies on Macs that have Intel GMA x3100 video chipsets.</li> 
+    <li>Added support for mapping all 15 buttons on the SteelSeries WoW Mouse via the in-game key bindings.</li> 
+</ul>					<div class="fixed"></div>
+				</div>
+
+				<div class="comments comments_single">
+					<a href="#respond">Leave a comment</a>
+											 | <a href="http://www.wowhead-tooltips.com/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/trackback/" rel="trackback">Trackback</a>
+									</div>
+
+				<!-- related posts START -->
+								<!-- related posts END -->
+			</div>
+
+
+<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/comment.js"></script>
+
+	<!-- comments START -->
+	<ol class="commentlist">
+			</ol>
+	<!-- comments END -->
+
+	<!-- comments navi START -->
+		<!-- comments navi END -->
+
+	<!-- trackback START -->
+			<div id="trackbacks">
+			<div class="caption">
+				<h3>1 trackbacks</h3>
+				<div class="actions">
+					<a id="trackbacks_show" href="javascript:void(0);" onclick="MGJS.setStyleDisplay('trackbacks_hide','');MGJS.setStyleDisplay('trackbacks_box','');MGJS.setStyleDisplay('trackbacks_show','none');">Show</a>
+					<a id="trackbacks_hide" href="javascript:void(0);" onclick="MGJS.setStyleDisplay('trackbacks_show','');MGJS.setStyleDisplay('trackbacks_box','none');MGJS.setStyleDisplay('trackbacks_hide','none');">Hide</a>
+				</div>
+				<div class="fixed"></div>
+			</div>
+			<div id="trackbacks_box" class="content">
+				<ol>
+											<li>
+							<a href='http://www.wowhead-tooltips.com/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes/' rel='external nofollow' class='url'>WoW Patch 3.3 &#8220;The Fall of the Lich King&#8221; Official Patch Notes | Wowhead Tooltips</a>							<small>
+								<strong>Pingback</strong>
+								 | 2009/12/11							</small>
+						</li>
+									</ol>
+			</div>
+		</div>
+		<script type="text/javascript">MGJS.setStyleDisplay('trackbacks_hide','none');MGJS.setStyleDisplay('trackbacks_box','none');</script>
+		<!-- trackback END -->
+
+
+
+	<div class="messagebox">
+		<div class="content small">
+						You must be <a href="http://www.wowhead-tooltips.com/wp-login.php">logged in</a> to post a comment.		</div>
+	</div>
+
+
+			
+
+	</div>
+
+	<!-- sidebar START -->
+<div id="sidebar">
+
+<!-- Style Switcher START -->
+<!-- Style Switcher END -->
+
+		<!-- showcase -->
+		
+		<ul id="widgets">
+
+<li class="widget widget_wht_stats_init"><h3>Script Statistics</h3><br /><div align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td style="text-align: left; font-weight: bold;">Characters Used:</td><td style="text-align: center;">666,880</td></tr><tr><td style="text-align: left; font-weight: bold;">Lines of Code:</td><td style="text-align: center;">20,802</td></tr><tr><td style="text-align: left; font-weight: bold;">Number of Directories:</td><td style="text-align: center;">8</td></tr><tr><td style="text-align: left; font-weight: bold;">Number of Files:</td><td style="text-align: center;">133</td></tr><tr><td style="text-align: left; font-weight: bold;">Total Size:</td><td style="text-align: center;">631.07 kb</td></tr>
+	<tr><td style="text-align: left; font-weight: bold;">Total Downloads:</td><td style="text-align: center;">14,243</td></tr>
+	<tr><td style="text-align: left; font-weight: bold;">Total Releases:</td><td style="text-align: center;">120</td></tr></table></div><br /></li><li class="widget GaboinkedChipinWidget_display"><h3>Wowhead Tooltips</h3><div align="center"><embed src="http://widget.chipin.com/widget/id/6c9e44b5a850b8c9 "flashVars="event_title=Script Development&event_desc=Donate to help offset the costs of development and hosting for this script.  Any donations made go directly to pay for the website and anything related to it.&color_scheme=gray" type="application/x-shockwave-flash" allowScriptAccess="always" wmode="transparent" width="250" height="250"></embed></div><br /><div align="center"><a href="http://amzn.com/w/2V74SGTVB9JEL">Use my Amazon Wishlist Instead</a></div><br /><br /></li><li class="widget widget_global_translator"><h3>Translator</h3>
+<!--FLAG_BAR_BEGIN--><div align="center"><table border='0'><tr><td><a id='flag_en' href='http://www.wowhead-tooltips.com/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='en' ><img id='flag_img_en' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_en.png' alt='English flag' title='English'  border='0' /></a></td><td><a id='flag_it' href='http://www.wowhead-tooltips.com/it/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='it' ><img id='flag_img_it' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_it.png' alt='Italian flag' title='Italian'  border='0' /></a></td><td><a id='flag_ko' href='http://www.wowhead-tooltips.com/ko/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='ko' ><img id='flag_img_ko' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ko.png' alt='Korean flag' title='Korean'  border='0' /></a></td><td><a id='flag_zh-CN' href='http://www.wowhead-tooltips.com/zh-CN/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='zh-CN' ><img id='flag_img_zh-CN' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_zh-CN.png' alt='Chinese (Simplified) flag' title='Chinese (Simplified)'  border='0' /></a></td><td><a id='flag_zh-TW' href='http://www.wowhead-tooltips.com/zh-TW/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='zh-TW' ><img id='flag_img_zh-TW' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_zh-TW.png' alt='Chinese (Traditional) flag' title='Chinese (Traditional)'  border='0' /></a></td><td><a id='flag_pt' href='http://www.wowhead-tooltips.com/pt/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='pt' ><img id='flag_img_pt' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_pt.png' alt='Portuguese flag' title='Portuguese'  border='0' /></a></td><td><a id='flag_de' href='http://www.wowhead-tooltips.com/de/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='de' ><img id='flag_img_de' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_de.png' alt='German flag' title='German'  border='0' /></a></td><td><a id='flag_fr' href='http://www.wowhead-tooltips.com/fr/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='fr' ><img id='flag_img_fr' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_fr.png' alt='French flag' title='French'  border='0' /></a></td><td><a id='flag_es' href='http://www.wowhead-tooltips.com/es/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='es' ><img id='flag_img_es' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_es.png' alt='Spanish flag' title='Spanish'  border='0' /></a></td><td><a id='flag_ja' href='http://www.wowhead-tooltips.com/ja/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='ja' ><img id='flag_img_ja' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ja.png' alt='Japanese flag' title='Japanese'  border='0' /></a></td><td><a id='flag_ar' href='http://www.wowhead-tooltips.com/ar/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='ar' ><img id='flag_img_ar' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ar.png' alt='Arabic flag' title='Arabic'  border='0' /></a></td><td><a id='flag_ru' href='http://www.wowhead-tooltips.com/ru/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='ru' ><img id='flag_img_ru' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ru.png' alt='Russian flag' title='Russian'  border='0' /></a></td></tr><tr><td><a id='flag_el' href='http://www.wowhead-tooltips.com/el/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='el' ><img id='flag_img_el' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_el.png' alt='Greek flag' title='Greek'  border='0' /></a></td><td><a id='flag_nl' href='http://www.wowhead-tooltips.com/nl/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='nl' ><img id='flag_img_nl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_nl.png' alt='Dutch flag' title='Dutch'  border='0' /></a></td><td><a id='flag_bg' href='http://www.wowhead-tooltips.com/bg/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='bg' ><img id='flag_img_bg' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_bg.png' alt='Bulgarian flag' title='Bulgarian'  border='0' /></a></td><td><a id='flag_cs' href='http://www.wowhead-tooltips.com/cs/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='cs' ><img id='flag_img_cs' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_cs.png' alt='Czech flag' title='Czech'  border='0' /></a></td><td><a id='flag_hr' href='http://www.wowhead-tooltips.com/hr/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='hr' ><img id='flag_img_hr' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_hr.png' alt='Croatian flag' title='Croatian'  border='0' /></a></td><td><a id='flag_da' href='http://www.wowhead-tooltips.com/da/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='da' ><img id='flag_img_da' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_da.png' alt='Danish flag' title='Danish'  border='0' /></a></td><td><a id='flag_fi' href='http://www.wowhead-tooltips.com/fi/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='fi' ><img id='flag_img_fi' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_fi.png' alt='Finnish flag' title='Finnish'  border='0' /></a></td><td><a id='flag_hi' href='http://www.wowhead-tooltips.com/hi/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='hi' ><img id='flag_img_hi' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_hi.png' alt='Hindi flag' title='Hindi'  border='0' /></a></td><td><a id='flag_pl' href='http://www.wowhead-tooltips.com/pl/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='pl' ><img id='flag_img_pl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_pl.png' alt='Polish flag' title='Polish'  border='0' /></a></td><td><a id='flag_ro' href='http://www.wowhead-tooltips.com/ro/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='ro' ><img id='flag_img_ro' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ro.png' alt='Romanian flag' title='Romanian'  border='0' /></a></td><td><a id='flag_sv' href='http://www.wowhead-tooltips.com/sv/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='sv' ><img id='flag_img_sv' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sv.png' alt='Swedish flag' title='Swedish'  border='0' /></a></td><td><a id='flag_no' href='http://www.wowhead-tooltips.com/no/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='no' ><img id='flag_img_no' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_no.png' alt='Norwegian flag' title='Norwegian'  border='0' /></a></td></tr><tr><td><a id='flag_ca' href='http://www.wowhead-tooltips.com/ca/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='ca' ><img id='flag_img_ca' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ca.png' alt='Catalan flag' title='Catalan'  border='0' /></a></td><td><a id='flag_tl' href='http://www.wowhead-tooltips.com/tl/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='tl' ><img id='flag_img_tl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_tl.png' alt='Filipino flag' title='Filipino'  border='0' /></a></td><td><a id='flag_iw' href='http://www.wowhead-tooltips.com/iw/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='iw' ><img id='flag_img_iw' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_iw.png' alt='Hebrew flag' title='Hebrew'  border='0' /></a></td><td><a id='flag_id' href='http://www.wowhead-tooltips.com/id/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='id' ><img id='flag_img_id' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_id.png' alt='Indonesian flag' title='Indonesian'  border='0' /></a></td><td><a id='flag_lv' href='http://www.wowhead-tooltips.com/lv/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='lv' ><img id='flag_img_lv' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_lv.png' alt='Latvian flag' title='Latvian'  border='0' /></a></td><td><a id='flag_lt' href='http://www.wowhead-tooltips.com/lt/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='lt' ><img id='flag_img_lt' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_lt.png' alt='Lithuanian flag' title='Lithuanian'  border='0' /></a></td><td><a id='flag_sr' href='http://www.wowhead-tooltips.com/sr/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='sr' ><img id='flag_img_sr' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sr.png' alt='Serbian flag' title='Serbian'  border='0' /></a></td><td><a id='flag_sk' href='http://www.wowhead-tooltips.com/sk/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='sk' ><img id='flag_img_sk' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sk.png' alt='Slovak flag' title='Slovak'  border='0' /></a></td><td><a id='flag_sl' href='http://www.wowhead-tooltips.com/sl/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='sl' ><img id='flag_img_sl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sl.png' alt='Slovenian flag' title='Slovenian'  border='0' /></a></td><td><a id='flag_uk' href='http://www.wowhead-tooltips.com/uk/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='uk' ><img id='flag_img_uk' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_uk.png' alt='Ukrainian flag' title='Ukrainian'  border='0' /></a></td><td><a id='flag_vi' href='http://www.wowhead-tooltips.com/vi/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='vi' ><img id='flag_img_vi' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_vi.png' alt='Vietnamese flag' title='Vietnamese'  border='0' /></a></td><td><a id='flag_sq' href='http://www.wowhead-tooltips.com/sq/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='sq' ><img id='flag_img_sq' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sq.png' alt='Albanian flag' title='Albanian'  border='0' /></a></td></tr><tr><td><a id='flag_et' href='http://www.wowhead-tooltips.com/et/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='et' ><img id='flag_img_et' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_et.png' alt='Estonian flag' title='Estonian'  border='0' /></a></td><td><a id='flag_gl' href='http://www.wowhead-tooltips.com/gl/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='gl' ><img id='flag_img_gl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_gl.png' alt='Galician flag' title='Galician'  border='0' /></a></td><td><a id='flag_mt' href='http://www.wowhead-tooltips.com/mt/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='mt' ><img id='flag_img_mt' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_mt.png' alt='Maltese flag' title='Maltese'  border='0' /></a></td><td><a id='flag_th' href='http://www.wowhead-tooltips.com/th/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='th' ><img id='flag_img_th' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_th.png' alt='Thai flag' title='Thai'  border='0' /></a></td><td><a id='flag_tr' href='http://www.wowhead-tooltips.com/tr/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='tr' ><img id='flag_img_tr' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_tr.png' alt='Turkish flag' title='Turkish'  border='0' /></a></td><td><a id='flag_hu' href='http://www.wowhead-tooltips.com/hu/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='hu' ><img id='flag_img_hu' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_hu.png' alt='Hungarian flag' title='Hungarian'  border='0' /></a></td><td><a id='flag_be' href='http://www.wowhead-tooltips.com/be/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='be' ><img id='flag_img_be' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_be.png' alt='Belarus flag' title='Belarus'  border='0' /></a></td><td><a id='flag_ga' href='http://www.wowhead-tooltips.com/ga/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='ga' ><img id='flag_img_ga' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ga.png' alt='Irish flag' title='Irish'  border='0' /></a></td><td><a id='flag_is' href='http://www.wowhead-tooltips.com/is/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='is' ><img id='flag_img_is' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_is.png' alt='Icelandic flag' title='Icelandic'  border='0' /></a></td><td><a id='flag_mk' href='http://www.wowhead-tooltips.com/mk/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='mk' ><img id='flag_img_mk' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_mk.png' alt='Macedonian flag' title='Macedonian'  border='0' /></a></td><td><a id='flag_ms' href='http://www.wowhead-tooltips.com/ms/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='ms' ><img id='flag_img_ms' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ms.png' alt='Malay flag' title='Malay'  border='0' /></a></td><td><a id='flag_fa' href='http://www.wowhead-tooltips.com/fa/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes-part-2/' hreflang='fa' ><img id='flag_img_fa' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_fa.png' alt='Persian flag' title='Persian'  border='0' /></a></td></tr></table></div><!--FLAG_BAR_END-->
+</li><li class="widget widget_twitter"><h3><a href="http://twitter.com/wowheadtooltips" class="twitter_title_link">Twitter</a></h3><ul class="twitter"><li class="twitter-item"> <a href="http://twitter.com/#search?q=wow" class="twitter-link">#wow</a> The Daily Quest: A little too real for me <a href="http://bit.ly/dqwMen" class="twitter-link">http://bit.ly/dqwMen</a>  <span class="twitter-timestamp"><abbr title="2010/06/24 01:02:23">22 mins ago</abbr></span></li><li class="twitter-item"> <a href="http://twitter.com/#search?q=wow" class="twitter-link">#wow</a> Spiritual Guidance: A shadowy work in progress <a href="http://bit.ly/aSFMT6" class="twitter-link">http://bit.ly/aSFMT6</a>  <span class="twitter-timestamp"><abbr title="2010/06/24 00:29:36">54 mins ago</abbr></span></li><li class="twitter-item"> <a href="http://twitter.com/#search?q=wow" class="twitter-link">#wow</a> Encrypted Text: The new style of rogue PvP <a href="http://bit.ly/9WE0AF" class="twitter-link">http://bit.ly/9WE0AF</a>  <span class="twitter-timestamp"><abbr title="2010/06/23 23:25:17">2 hours ago</abbr></span></li><li class="twitter-item"> <a href="http://twitter.com/#search?q=wow" class="twitter-link">#wow</a> Choose My Adventure: Letters home <a href="http://bit.ly/dgRNTl" class="twitter-link">http://bit.ly/dgRNTl</a>  <span class="twitter-timestamp"><abbr title="2010/06/23 22:19:25">3 hours ago</abbr></span></li><li class="twitter-item"> Slashdot: Skype Releases Open SDK <a href="http://bit.ly/cjOYJ8" class="twitter-link">http://bit.ly/cjOYJ8</a>  <span class="twitter-timestamp"><abbr title="2010/06/23 21:30:54">4 hours ago</abbr></span></li></ul></li><li class="widget widget_archive"><h3>Archives</h3>		<ul>
+			<li><a href='http://www.wowhead-tooltips.com/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/11/' title='November 2009'>November 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/10/' title='October 2009'>October 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/09/' title='September 2009'>September 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/08/' title='August 2009'>August 2009</a></li>
+		</ul>
+</li><li class="widget widget_links"><h3>Links</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.wowhead-tooltips.com/?KxLyYsi3" title="jQuery plugin that actually handles the displaying of the tooltips for the armory and guild modules." target="_blank">ClueTip</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?e0NeqOIg" title="My website.">craCkpot dot ws</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?yDMVLNqB" title="JavaScript library used by this script for various things." target="_blank">jQuery</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?LpdhEVTz" title="The most popular open source database engine on the net!  Used by the script for caching.">MySQL</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?S4HgtTXe" title="PHP: Hypertext Preprocessor.  The code behind this script.">PHP</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?aj4iw4Ja" title="The operating system used to develop this script.  Amazing distribution of the Linux operating system." target="_blank">Ubuntu Linux</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?U2iECrRk" title="If you&#8217;re not sure about this game then this script can&#8217;t help you.">World of Warcraft</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?3Q6VoTRI" title="The site this script uses to make the tooltips.  The best Wow-related site on the net!" target="_blank">Wowhead</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?CWIPQcJr" title="Easy to install Apache web server that includes PHP 5.3, MySQL 5.x, phpMyAdmin, FTP, amongst other additions, and it works for Windows and *nix.  Runs the testing environment for this script." target="_blank">XAMPP</a></li>
+
+	</ul>
+</li>
+<li class="widget widget_meta"><h3>Miscellaneous</h3>			<ul>
+			<li><a href="http://www.wowhead-tooltips.com/wp-login.php?action=register">Register</a></li>			<li><a href="http://www.wowhead-tooltips.com/wp-login.php">Log in</a></li>
+			<li><a href="http://www.wowhead-tooltips.com/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.wowhead-tooltips.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li>		</ul>
+
+		<!-- showcase 2 -->
+		
+</div>
+<!-- sidebar END -->
+
+	<div class="fixed"></div>
+
+		<div id="bottom">
+			<div class="postnav">
+				<span class="alignleft">&laquo; <a href="http://www.wowhead-tooltips.com/2009/12/07/wow-3-3-patch-notes-part-1/" rel="prev">WoW 3.3 Patch Notes Part 1</a></span>
+				<span class="alignright"><a href="http://www.wowhead-tooltips.com/2009/12/11/wow-patch-3-3-the-fall-of-the-lich-king-official-patch-notes/" rel="next">WoW Patch 3.3 &#8220;The Fall of the Lich King&#8221; Official Patch Notes</a> &raquo;</span>
+				<div class="fixed"></div>
+			</div>
+
+<script src="http://cdn.wibiya.com/Loaders/Loader_35127.js" type="text/javascript"></script>			<div class="anchor">
+				<span><a href="#" onclick="MGJS.goTop();return false;">TOP</a></span>
+			</div>
+			<div class="fixed"></div>
+			</div>
+		<div class="fixed"></div>
+	</div>
+</div>
+
+<!-- footer START -->
+<div id="footer">
+	<div class="inner">
+		<div class="content">
+			<p id="about">
+				Copyright &copy; 2009-2010 Wowhead Tooltips | Powered by <a href="http://wordpress.org/">WordPress</a> | Theme by <a href="http://www.neoease.com/">NeoEase</a> | <a href="http://www.bad-behavior.ioerror.us/">Bad Behavior</a> has blocked <strong>897</strong> access attempts in the last 7 days.				<br/><br/>
+				<a href="http://www.php.net" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/php5.png" alt="" border="0" /></a>&nbsp;
+				<a href="http://www.mysql.com" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/mysql.png" alt="" border="0" /></a>&nbsp;
+				<a href="http://www.apachefriends.org/en/xampp.html" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/xampp.gif" alt="" border="0" /></a>&nbsp;
+				<a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/xhtml.png" alt="" border="0" /></a>&nbsp;
+				<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/css.png" alt="" border="0" /></a>
+			</p>
+
+			<ul id="admin">
+				<li><a href="http://www.wowhead-tooltips.com/wp-login.php?action=register">Register</a></li>				<li><a href="http://www.wowhead-tooltips.com/wp-login.php">Log in</a></li>
+			</ul>
+
+			<div class="fixed"></div>
+		</div>
+	</div>
+</div>
+<!-- footer END -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10454509-1");
+pageTracker._trackPageview();
+} catch(err) {}</script></body>
+</html>

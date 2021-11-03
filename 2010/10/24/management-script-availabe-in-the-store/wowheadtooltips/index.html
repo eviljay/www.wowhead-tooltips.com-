@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta name="verify-v1" content="OAhO7aoCPrxJ0IbKnvR9iyj1phClFDk975wsg5ifX6U=" />
+	<title>Management Script Availabe in the Store! wowheadtooltips – Wowhead Tooltips</title>
+	<link rel="favicon" href="http://www.wowhead-tooltips.com/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://www.wowhead-tooltips.com/favicon.ico" type="image/x-icon" /> 
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="http://www.wowhead-tooltips.com/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://www.wowhead-tooltips.com/comments/feed/" />
+	<link rel="pingback" href="http://www.wowhead-tooltips.com/xmlrpc.php" />
+
+	<!-- style START -->
+	<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/style.css" type="text/css" media="screen" />
+		<!--[if IE]>
+		<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+
+	<!-- default style -->
+			<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/styles/white/default.css" type="text/css" media="screen" title="white" />
+		<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/styles/white/global.css" type="text/css" media="screen" />
+	
+	<!-- others styles -->
+	<!-- style END -->
+
+	<!-- javascript START -->
+		<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/base.js"></script>
+	<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/menu.js"></script>
+	<!-- javascript END -->
+	
+	<!-- Google Prettify -->
+	<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/prettify.js"></script>
+	<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/prettify.css" type="text/css" />
+	<!-- END Google Prettify -->
+	
+	<!-- jquery toggle -->
+	<script type="text/javascript" src="http://wowhead-tooltips.com/js/jquery.js"></script>
+	<script type="text/javascript">
+	function selectMirror(mirror)
+	{
+		jQuery('#mirror').val(mirror);
+	}
+	
+	jQuery.noConflict(); 
+	jQuery(document).ready(function(){
+		
+		jQuery('#mirror').change(function()
+		{
+			var flag = '';
+			switch (jQuery('#mirror').val())
+			{
+				case 'us1':
+				case 'us2':
+				case 'us3':
+				case 'us4':
+					flag = 'us.png';
+					break;
+				case 'eu1':
+					flag = 'de.png';
+					break;
+				case 'eu2':
+					flag = 'nl.png';
+					break;
+				default: break;
+			}
+			jQuery('#mirror_flag').html('<img src="http://wowhead-tooltips.com/wp-content/plugins/downloads/flags/' + flag + '" alt="' + flag + '" />');
+		});
+		
+		jQuery(".toggle_container").hide();
+	
+		jQuery("h1.trigger").toggle(function(){
+			jQuery(this).addClass("active"); 
+		}, function () {
+			jQuery(this).removeClass("active");
+		});
+		
+		jQuery("h1.trigger").click(function(){
+			jQuery(this).next(".toggle_container").toggle();
+		});
+	
+	});
+	</script>
+	<style type="text/css">
+		p.indent {
+			text-indent: 20px;	
+		}
+		html {
+			overflow-Y: scroll;
+		}
+		h2.faqheader {
+			clear: both; 
+			padding-top: 10px;
+		}
+		h1.trigger {
+			font-size: 12px;
+			font-weight: bold;
+			float: left;
+			display: block;
+			clear: both;
+			color: #3B5998;
+			cursor: pointer;
+			padding-left: 25px;
+		}
+		h1.trigger:hover {
+			text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+		}
+		h1.active {
+			background-position: left bottom; 
+			display: block;
+		}
+		.toggle_container {
+			margin: 0 0 5px;
+			padding: 0;
+			overflow: hidden;
+			clear: both;
+			display: none;
+		}
+		
+		tt.faq {
+			font-size: 11px;
+			font-weight: bold;
+			color: #2A4BC1;
+			background-color: #FFF;
+			border: 1px dashed #000;
+			display: block;
+			width: 75%;
+			padding-left: 5px;
+		} 
+		
+		blockquote.tt {
+			font-size: 11px;
+			font-weight: bold;
+			color: #2A4BC1;
+		}
+	</style>
+
+
+		<meta name='Admin Management Xtended WordPress plugin' content='2.1.9' />
+<link rel="alternate" type="application/rss+xml" title="Wowhead Tooltips &raquo; wowheadtooltips Comments Feed" href="http://www.wowhead-tooltips.com/wp-content/uploads/2010/10/wowheadtooltips.png/feed/" />
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-includes/js/jquery/jquery.js?ver=1.4.4'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-content/plugins/jquery-lightbox-balupton-edition/scripts/jquery.lightbox.min.js?ver=1.4.9'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-content/plugins/jquery-lightbox-balupton-edition/scripts/jquery.lightbox.plugin.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.wowhead-tooltips.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.wowhead-tooltips.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Wowhead Tooltips' href='http://www.wowhead-tooltips.com/' />
+<link rel='up' title='Management Script Availabe in the Store!' href='http://www.wowhead-tooltips.com/2010/10/24/management-script-availabe-in-the-store/' />
+
+<!-- All in One SEO Pack 1.6.13.2 by Michael Torbert of Semper Fi Web Design[431,478] -->
+<link rel="canonical" href="http://www.wowhead-tooltips.com/wp-content/uploads/2010/10/wowheadtooltips.png" />
+<!-- /all in one seo pack -->
+
+<!-- Bad Behavior 2.0.42 run time: 3.127 ms -->
+<script type="text/javascript">
+<!--
+function bb2_addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			oldonload();
+			func();
+		}
+	}
+}
+
+bb2_addLoadEvent(function() {
+	for ( i=0; i < document.forms.length; i++ ) {
+		if (document.forms[i].method == 'post') {
+			var myElement = document.createElement('input');
+			myElement.setAttribute('type', 'hidden');
+			myElement.name = 'bb2_screener_';
+			myElement.value = '1319704259 207.241.237.236';
+			document.forms[i].appendChild(myElement);
+		}
+	}
+});
+// --></script>
+		      
+<script type="text/javascript">jQuery(function($) {
+  $.Lightbox.construct({
+  });
+});</script>
+      </head>
+
+
+<body onload="prettyPrint()">
+	<!-- admin START -->
+	<div id="admin-top">
+		<ul id="admin">
+						<li><a href="http://www.wowhead-tooltips.com/wp-login.php">Log in</a></li>
+		</ul>
+	</div>
+	<!-- admin END -->
+	
+	<!-- header START -->
+	<div id="header">
+		<div class="inner">
+			<div class="content">
+				<div class="caption">
+					<h1 id="title"><a href="http://www.wowhead-tooltips.com/" title="It&#039;s not a bug, it&#039;s a design feature.">Wowhead Tooltips</a></h1>
+					<div id="tagline">It&#039;s not a bug, it&#039;s a design feature.</div>
+				</div>
+
+				<!-- search box -->
+									<form action="http://www.wowhead-tooltips.com/" id="search_box" method="get">
+						<div id="searchbox">
+							<input type="text" id="searchtxt" class="textfield" name="s" value="" />
+						</div>
+					</form>
+				<script type="text/javascript">
+//<![CDATA[
+	var searchbox = document.getElementById("searchbox");
+	var searchtxt = document.getElementById("searchtxt");
+	var tiptext = "Type text to search here...";
+	if(searchtxt.value == "" || searchtxt.value == tiptext) {
+		searchtxt.className += " searchtip";
+		searchtxt.value = tiptext;
+	}
+	searchtxt.onfocus = function(e) {
+		if(searchtxt.value == tiptext) {
+			searchtxt.value = "";
+			searchtxt.className = searchtxt.className.replace(" searchtip", "");
+		}
+	}
+	searchtxt.onblur = function(e) {
+		if(searchtxt.value == "") {
+			searchtxt.className += " searchtip";
+			searchtxt.value = tiptext;
+		}
+	}
+//]]>
+</script>
+
+				<!-- navigation START -->
+				<ul id="navigation">
+
+					<li class="page_item"><a href="http://www.wowhead-tooltips.com/">Home</a></li>
+					<li class="page_item page-item-5"><a href="http://www.wowhead-tooltips.com/downloads/" title="Downloads">Downloads</a>
+<ul class='children'>
+	<li class="page_item page-item-9"><a href="http://www.wowhead-tooltips.com/downloads/universal/" title="Universal">Universal</a></li>
+	<li class="page_item page-item-11"><a href="http://www.wowhead-tooltips.com/downloads/joomla/" title="Joomla">Joomla</a></li>
+	<li class="page_item page-item-253"><a href="http://www.wowhead-tooltips.com/downloads/terms-of-use/" title="Terms of Use">Terms of Use</a></li>
+	<li class="page_item page-item-645"><a href="http://www.wowhead-tooltips.com/downloads/mirror-status/" title="Mirror Status">Mirror Status</a></li>
+</ul>
+</li>
+<li class="page_item page-item-21"><a href="http://www.wowhead-tooltips.com/contact/" title="About &amp; Contact">About &amp; Contact</a>
+<ul class='children'>
+	<li class="page_item page-item-93"><a href="http://www.wowhead-tooltips.com/contact/donate/" title="Donate">Donate</a></li>
+	<li class="page_item page-item-106"><a href="http://www.wowhead-tooltips.com/contact/installation-service/" title="Installation Service">Installation Service</a></li>
+	<li class="page_item page-item-296"><a href="http://www.wowhead-tooltips.com/contact/credits/" title="Credits">Credits</a></li>
+</ul>
+</li>
+					<li><a rel="external nofollow" title="Site Database" id="sitedb" href="http://sitedb.wowhead-tooltips.com">Site Database</a></li>
+					<li><a rel="external nofollow" title="Documentation Wiki" id="wiki" href="http://wiki.wowhead-tooltips.com">Wiki</a></li>
+					<li><a rel="external nofollow" title="Support Forums." id="forums" href="http://support.wowhead-tooltips.com">Forums</a></li>
+					<li id="subscribe">
+						<a rel="external nofollow" title="Subscribe to this blog..." id="feed" href="http://www.wowhead-tooltips.com/feed/"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/transparent.gif" alt="RSS feed" /></a>
+													<ul>
+								<li class="first"><a rel="external nofollow" title="Subscribe with Youdao" href="http://reader.youdao.com/b.do?url=http://www.wowhead-tooltips.com/feed/"> Youdao</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Xian Guo" href="http://www.xianguo.com/subscribe.php?url=http://www.wowhead-tooltips.com/feed/"> Xian Guo</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Zhua Xia" href="http://www.zhuaxia.com/add_channel.php?url=http://www.wowhead-tooltips.com/feed/"> Zhua Xia</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Google" href="http://fusion.google.com/add?feedurl=http://www.wowhead-tooltips.com/feed/"> Google</a></li>
+								<li><a rel="external nofollow" title="Subscribe with My Yahoo!" href="http://add.my.yahoo.com/rss?url=http://www.wowhead-tooltips.com/feed/"> My Yahoo!</a></li>
+								<li><a rel="external nofollow" title="Subscribe with newsgator" href="http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=http://www.wowhead-tooltips.com/feed/"> newsgator</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Bloglines" href="http://www.bloglines.com/sub/http://www.wowhead-tooltips.com/feed/"> Bloglines</a></li>
+								<li><a rel="external nofollow" title="Subscribe with iNezha" href="http://inezha.com/add?url=http://www.wowhead-tooltips.com/feed/"> iNezha</a></li>
+							</ul>
+											</li>
+
+				</ul>
+				<!-- navigation END -->
+
+			</div>
+		</div>
+	</div>
+	<!-- header END -->
+
+	<div id="container">
+		<div id="content">
+			<div id="main">
+
+
+		
+			<div class="post">
+				<div class="title">
+					<h2>wowheadtooltips</h2>
+					<div class="fixed"></div>
+				</div>
+
+				<div class="info">
+					
+					<span>October 24th, 2010</span>
+																<span> | Tags: </span>
+					
+					<div class="fixed"></div>
+				</div>
+
+				<div class="content">
+					<p class="attachment"><a href='http://www.wowhead-tooltips.com/wp-content/uploads/2010/10/wowheadtooltips.png' title='wowheadtooltips'><img width="155" height="45" src="http://www.wowhead-tooltips.com/wp-content/uploads/2010/10/wowheadtooltips.png" class="attachment-medium" alt="wowheadtooltips" title="wowheadtooltips" /></a></p>
+					<div class="fixed"></div>
+				</div>
+
+				<div class="comments comments_single">
+					<a href="#respond">Leave a comment</a>
+											 | <a href="http://www.wowhead-tooltips.com/wp-content/uploads/2010/10/wowheadtooltips.png/trackback/" rel="trackback">Trackback</a>
+									</div>
+
+				<!-- related posts START -->
+								<!-- related posts END -->
+			</div>
+
+
+<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/comment.js"></script>
+
+	<div class="messagebox">
+		<div class="content small">
+			No comments yet.		</div>
+	</div>
+
+
+
+	<div class="messagebox">
+		<div class="content small">
+						You must be <a href="http://www.wowhead-tooltips.com/wp-login.php">logged in</a> to post a comment.		</div>
+	</div>
+
+
+			
+
+	</div>
+
+	<!-- sidebar START -->
+<div id="sidebar">
+
+<!-- Style Switcher START -->
+<!-- Style Switcher END -->
+
+		<!-- showcase -->
+		
+		<ul id="widgets">
+
+<li class="widget widget_wht_stats_init"><h3>Script Statistics</h3><br /><div align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td style="text-align:left; font-weight:bold;">Latest Version:</td><td style="text-align: center;"><a href="http://wowhead-tooltips.com/download/">Download</a></td></tr><tr><td style="text-align:left; font-weight:bold;">Changelog:</td><td style="text-align: center;"><a href="http://wiki.wowhead-tooltips.com/changelog">Here</a></td></tr><tr><td style="text-align: left; font-weight: bold;">Characters Used:</td><td style="text-align: center;">722,755</td></tr><tr><td style="text-align: left; font-weight: bold;">Lines of Code:</td><td style="text-align: center;">22,442</td></tr><tr><td style="text-align: left; font-weight: bold;">Number of Directories:</td><td style="text-align: center;">8</td></tr><tr><td style="text-align: left; font-weight: bold;">Number of Files:</td><td style="text-align: center;">146</td></tr><tr><td style="text-align: left; font-weight: bold;">Total Size:</td><td style="text-align: center;">684.04 kb</td></tr>
+	<tr><td style="text-align: left; font-weight: bold;">Total Downloads:</td><td style="text-align: center;">22,388</td></tr>
+	<tr><td style="text-align: left; font-weight: bold;">Total Releases:</td><td style="text-align: center;">126</td></tr></table></div><br /></li><li class="widget GaboinkedChipinWidget_display"><h3>Wowhead Tooltips</h3><div align="center"><embed src="http://widget.chipin.com/widget/id/fb9234613b2b3610 "flashVars="event_title=Script Development&event_desc=Donate to help offset the costs of development and hosting for this script.  Any donations made go directly to pay for the website and anything related to it.&color_scheme=gray" type="application/x-shockwave-flash" allowScriptAccess="always" wmode="transparent" width="250" height="250"></embed></div><br /><div align="center"><a href="http://amzn.com/w/2V74SGTVB9JEL">Use my Amazon Wishlist Instead</a></div><br /><br /></li><li class="widget widget_twitter"><h3><a href="http://twitter.com/wowheadtooltips" class="twitter_title_link">Twitter</a></h3><ul class="twitter"><li>No public Twitter messages.</li></ul></li><li class="widget widget_archive"><h3>Archives</h3>		<ul>
+			<li><a href='http://www.wowhead-tooltips.com/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/11/' title='November 2009'>November 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/10/' title='October 2009'>October 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/09/' title='September 2009'>September 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/08/' title='August 2009'>August 2009</a></li>
+		</ul>
+</li><li class="widget widget_links"><h3>Links</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.wowhead-tooltips.com/?KxLyYsi3" title="jQuery plugin that actually handles the displaying of the tooltips for the armory and guild modules." target="_blank">ClueTip</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?e0NeqOIg" title="My website.">craCkpot dot ws</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?yDMVLNqB" title="JavaScript library used by this script for various things." target="_blank">jQuery</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?LpdhEVTz" title="The most popular open source database engine on the net!  Used by the script for caching.">MySQL</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?S4HgtTXe" title="PHP: Hypertext Preprocessor.  The code behind this script.">PHP</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?aj4iw4Ja" title="The operating system used to develop this script.  Amazing distribution of the Linux operating system." target="_blank">Ubuntu Linux</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?U2iECrRk" title="If you&#8217;re not sure about this game then this script can&#8217;t help you.">World of Warcraft</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?3Q6VoTRI" title="The site this script uses to make the tooltips.  The best Wow-related site on the net!" target="_blank">Wowhead</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?CWIPQcJr" title="Easy to install Apache web server that includes PHP 5.3, MySQL 5.x, phpMyAdmin, FTP, amongst other additions, and it works for Windows and *nix.  Runs the testing environment for this script." target="_blank">XAMPP</a></li>
+
+	</ul>
+</li>
+<li class="widget widget_meta"><h3>Miscellaneous</h3>			<ul>
+						<li><a href="http://www.wowhead-tooltips.com/wp-login.php">Log in</a></li>
+			<li><a href="http://www.wowhead-tooltips.com/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.wowhead-tooltips.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li>		</ul>
+
+		<!-- showcase 2 -->
+		
+</div>
+<!-- sidebar END -->
+
+	<div class="fixed"></div>
+
+		<div id="bottom">
+			<div class="postnav">
+				<span class="alignleft">&laquo; <a href="http://www.wowhead-tooltips.com/2010/10/24/management-script-availabe-in-the-store/" rel="prev">Management Script Availabe in the Store!</a></span>
+				<span class="alignright"></span>
+				<div class="fixed"></div>
+			</div>
+
+<script src="http://cdn.wibiya.com/Loaders/Loader_35127.js" type="text/javascript"></script>			<div class="anchor">
+				<span><a href="#" onclick="MGJS.goTop();return false;">TOP</a></span>
+			</div>
+			<div class="fixed"></div>
+			</div>
+		<div class="fixed"></div>
+	</div>
+</div>
+
+<!-- footer START -->
+<div id="footer">
+	<div class="inner">
+		<div class="content">
+			<p id="about">
+				Copyright &copy; 2009-2011 Wowhead Tooltips | Powered by <a href="http://wordpress.org/">WordPress</a> | Theme by <a href="http://www.neoease.com/">NeoEase</a> | <a href="http://www.bad-behavior.ioerror.us/">Bad Behavior</a> has blocked <strong>281</strong> access attempts in the last 7 days.				<br/><br/>
+				<a href="http://www.php.net" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/php5.png" alt="" border="0" /></a>&nbsp;
+				<a href="http://www.mysql.com" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/mysql.png" alt="" border="0" /></a>&nbsp;
+				<a href="http://www.apachefriends.org/en/xampp.html" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/xampp.gif" alt="" border="0" /></a>&nbsp;
+				<a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/xhtml.png" alt="" border="0" /></a>&nbsp;
+				<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/css.png" alt="" border="0" /></a>
+			</p>
+
+			<ul id="admin">
+								<li><a href="http://www.wowhead-tooltips.com/wp-login.php">Log in</a></li>
+			</ul>
+
+			<div class="fixed"></div>
+		</div>
+	</div>
+</div>
+<!-- footer END -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10454509-1");
+pageTracker._trackPageview();
+} catch(err) {}</script></body>
+</html>

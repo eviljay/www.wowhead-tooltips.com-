@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta name="verify-v1" content="OAhO7aoCPrxJ0IbKnvR9iyj1phClFDk975wsg5ifX6U=" />
+	<title>Site Database | Wowhead Tooltips</title>
+	<link rel="icon" href="http://www.wowhead-tooltips.com/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://www.wowhead-tooltips.com/favicon.ico" type="image/x-icon" /> 
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="http://www.wowhead-tooltips.com/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all comments" href="http://www.wowhead-tooltips.com/comments/feed/" />
+	<link rel="pingback" href="http://www.wowhead-tooltips.com/xmlrpc.php" />
+
+	<!-- style START -->
+	<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/style.css" type="text/css" media="screen" />
+		<!--[if IE]>
+		<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+
+	<!-- default style -->
+			<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/styles/white/default.css" type="text/css" media="screen" title="white" />
+		<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/styles/white/global.css" type="text/css" media="screen" />
+	
+	<!-- others styles -->
+	<!-- style END -->
+
+	<!-- javascript START -->
+		<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/base.js"></script>
+	<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/menu.js"></script>
+	<!-- javascript END -->
+	
+	<!-- Google Prettify -->
+	<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/prettify.js"></script>
+	<link rel="stylesheet" href="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/prettify.css" type="text/css" />
+	<!-- END Google Prettify -->
+	
+	<!-- jquery toggle -->
+	<script type="text/javascript" src="http://wowhead-tooltips.com/js/jquery.js"></script>
+	<script type="text/javascript">
+	function selectMirror(mirror)
+	{
+		jQuery('#mirror').val(mirror);
+	}
+	
+	jQuery.noConflict(); 
+	jQuery(document).ready(function(){
+
+		jQuery('#mirror').change(function()
+		{
+			var flag = '';
+			switch (jQuery('#mirror').val())
+			{
+				case 'us1':
+				case 'us2':
+				case 'us3':
+					flag = 'us.png';
+					break;
+				case 'eu1':
+					flag = 'gb.png';
+					break;
+				case 'eu2':
+					flag = 'de.png';
+					break;
+				case 'eu3':
+					flag = 'nl.png';
+					break;
+				default: break;
+			}
+			jQuery('#mirror_flag').html('<img src="http://wowhead-tooltips.com/wp-content/plugins/downloads/flags/' + flag + '" alt="' + flag + '" />');
+		});
+		
+		jQuery(".toggle_container").hide();
+	
+		jQuery("h1.trigger").toggle(function(){
+			jQuery(this).addClass("active"); 
+			}, function () {
+			jQuery(this).removeClass("active");
+		});
+		
+		jQuery("h1.trigger").click(function(){
+			jQuery(this).next(".toggle_container").toggle();
+		});
+	
+	});
+	</script>
+	<style type="text/css">
+		p.indent {
+			text-indent: 20px;	
+		}
+		html {
+			overflow-Y: scroll;
+		}
+		h2.faqheader {
+			clear: both; 
+			padding-top: 10px;
+		}
+		h1.trigger {
+			font-size: 12px;
+			font-weight: bold;
+			float: left;
+			display: block;
+			clear: both;
+			color: #3B5998;
+			cursor: pointer;
+			padding-left: 25px;
+		}
+		h1.trigger:hover {
+			text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+		}
+		h1.active {
+			background-position: left bottom; 
+			display: block;
+		}
+		.toggle_container {
+			margin: 0 0 5px;
+			padding: 0;
+			overflow: hidden;
+			clear: both;
+			display: none;
+		}
+		
+		tt.faq {
+			font-size: 11px;
+			font-weight: bold;
+			color: #2A4BC1;
+			background-color: #FFF;
+			border: 1px dashed #000;
+			display: block;
+			width: 75%;
+			padding-left: 5px;
+		} 
+		
+		blockquote.tt {
+			font-size: 11px;
+			font-weight: bold;
+			color: #2A4BC1;
+		}
+	</style>
+
+
+		<meta name='Admin Management Xtended WordPress plugin' content='2.1.1' />
+<link rel="alternate" type="application/rss+xml" title="Wowhead Tooltips &raquo; Site Database Comments Feed" href="http://www.wowhead-tooltips.com/tools/sitedb/feed/" />
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-content/plugins/jquery-lightbox-balupton-edition/js/jquery.lightbox.min.js?ie6_upgrade=false&#038;ver=1.3.7'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-content/plugins/jquery-lightbox-balupton-edition/js/jquery.lightbox.plugin.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.wowhead-tooltips.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.wowhead-tooltips.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.wowhead-tooltips.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Wowhead Tooltips' href='http://www.wowhead-tooltips.com/' />
+<link rel='up' title='Tools' href='http://www.wowhead-tooltips.com/tools/' />
+<link rel='prev' title='Installation Service' href='http://www.wowhead-tooltips.com/contact/installation-service/' />
+<link rel='next' title='Tools' href='http://www.wowhead-tooltips.com/tools/' />
+
+<!-- All in One SEO Pack 1.6.10.2 by Michael Torbert of Semper Fi Web Design[431,476] -->
+<link rel="canonical" href="http://www.wowhead-tooltips.com/tools/sitedb/" />
+<!-- /all in one seo pack -->
+
+<!-- Bad Behavior 2.0.36 run time: 1.885 ms -->
+<script type="text/javascript">
+<!--
+function bb2_addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			oldonload();
+			func();
+		}
+	}
+}
+
+bb2_addLoadEvent(function() {
+	for ( i=0; i < document.forms.length; i++ ) {
+		if (document.forms[i].method == 'post') {
+			var myElement = document.createElement('input');
+			myElement.setAttribute('type', 'hidden');
+			myElement.name = 'bb2_screener_';
+			myElement.value = '1277342355 204.236.235.245';
+			document.forms[i].appendChild(myElement);
+		}
+	}
+});
+// --></script>
+		</head>
+
+
+<body onload="prettyPrint()">
+	<!-- admin START -->
+	<div id="admin-top">
+		<ul id="admin">
+			<li><a href="http://www.wowhead-tooltips.com/wp-login.php?action=register">Register</a></li>			<li><a href="http://www.wowhead-tooltips.com/wp-login.php">Log in</a></li>
+		</ul>
+	</div>
+	<!-- admin END -->
+	
+	<!-- header START -->
+	<div id="header">
+		<div class="inner">
+			<div class="content">
+				<div class="caption">
+					<h1 id="title"><a href="http://www.wowhead-tooltips.com/" title="It&#039;s not a bug, it&#039;s a design feature.">Wowhead Tooltips</a></h1>
+					<div id="tagline">It&#039;s not a bug, it&#039;s a design feature.</div>
+				</div>
+
+				<!-- search box -->
+									<form action="http://www.wowhead-tooltips.com/" id="search_box" method="get">
+						<div id="searchbox">
+							<input type="text" id="searchtxt" class="textfield" name="s" value="" />
+						</div>
+					</form>
+				<script type="text/javascript">
+//<![CDATA[
+	var searchbox = document.getElementById("searchbox");
+	var searchtxt = document.getElementById("searchtxt");
+	var tiptext = "Type text to search here...";
+	if(searchtxt.value == "" || searchtxt.value == tiptext) {
+		searchtxt.className += " searchtip";
+		searchtxt.value = tiptext;
+	}
+	searchtxt.onfocus = function(e) {
+		if(searchtxt.value == tiptext) {
+			searchtxt.value = "";
+			searchtxt.className = searchtxt.className.replace(" searchtip", "");
+		}
+	}
+	searchtxt.onblur = function(e) {
+		if(searchtxt.value == "") {
+			searchtxt.className += " searchtip";
+			searchtxt.value = tiptext;
+		}
+	}
+//]]>
+</script>
+
+				<!-- navigation START -->
+				<ul id="navigation">
+
+					<li class="page_item"><a href="http://www.wowhead-tooltips.com/">Home</a></li>
+					<li class="page_item page-item-5"><a href="http://www.wowhead-tooltips.com/downloads/" title="Downloads">Downloads</a>
+<ul class='children'>
+	<li class="page_item page-item-9"><a href="http://www.wowhead-tooltips.com/downloads/universal/" title="Universal">Universal</a></li>
+	<li class="page_item page-item-11"><a href="http://www.wowhead-tooltips.com/downloads/joomla/" title="Joomla">Joomla</a></li>
+	<li class="page_item page-item-77"><a href="http://www.wowhead-tooltips.com/downloads/item-cache/" title="Item Cache">Item Cache</a></li>
+	<li class="page_item page-item-253"><a href="http://www.wowhead-tooltips.com/downloads/terms-of-use/" title="Terms of Use">Terms of Use</a></li>
+</ul>
+</li>
+<li class="page_item page-item-135 current_page_ancestor current_page_parent"><a href="http://www.wowhead-tooltips.com/tools/" title="Tools">Tools</a>
+<ul class='children'>
+	<li class="page_item page-item-547"><a href="http://www.wowhead-tooltips.com/tools/glossary/" title="Glossary of Terms">Glossary of Terms</a></li>
+	<li class="page_item page-item-390"><a href="http://www.wowhead-tooltips.com/tools/nfl-qb-rating-calculator/" title="NFL QB Rating Calculator">NFL QB Rating Calculator</a></li>
+	<li class="page_item page-item-399"><a href="http://www.wowhead-tooltips.com/tools/nhl-team-points-calculator/" title="NHL Team Points Calculator">NHL Team Points Calculator</a></li>
+	<li class="page_item page-item-121 current_page_item"><a href="http://www.wowhead-tooltips.com/tools/sitedb/" title="Site Database">Site Database</a></li>
+	<li class="page_item page-item-164"><a href="http://www.wowhead-tooltips.com/tools/wordpress/" title="WordPress">WordPress</a>
+	<ul class='children'>
+		<li class="page_item page-item-149"><a href="http://www.wowhead-tooltips.com/tools/wordpress/wp-realm-status/" title="WoW Realm Status Plugin">WoW Realm Status Plugin</a></li>
+		<li class="page_item page-item-201"><a href="http://www.wowhead-tooltips.com/tools/wordpress/linkerator/" title="Linkerator">Linkerator</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-137"><a href="http://www.wowhead-tooltips.com/tools/wow-realm-status/" title="WoW Realm Status">WoW Realm Status</a></li>
+</ul>
+</li>
+<li class="page_item page-item-21"><a href="http://www.wowhead-tooltips.com/contact/" title="About &amp; Contact">About &amp; Contact</a>
+<ul class='children'>
+	<li class="page_item page-item-93"><a href="http://www.wowhead-tooltips.com/contact/donate/" title="Donate">Donate</a></li>
+	<li class="page_item page-item-106"><a href="http://www.wowhead-tooltips.com/contact/installation-service/" title="Installation Service">Installation Service</a></li>
+	<li class="page_item page-item-557"><a href="http://www.wowhead-tooltips.com/contact/hosting/" title="Hosting">Hosting</a></li>
+	<li class="page_item page-item-296"><a href="http://www.wowhead-tooltips.com/contact/credits/" title="Credits">Credits</a></li>
+</ul>
+</li>
+					<li><a rel="external nofollow" title="Documentation Wiki" id="wiki" href="http://wiki.wowhead-tooltips.com">Wiki</a></li>
+					<li><a rel="external nofollow" title="Support Forums." id="forums" href="http://support.wowhead-tooltips.com">Forums</a></li>
+					<li id="subscribe">
+						<a rel="external nofollow" title="Subscribe to this blog..." id="feed" href="http://www.wowhead-tooltips.com/feed/"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/transparent.gif" alt="RSS feed" /></a>
+													<ul>
+								<li class="first"><a rel="external nofollow" title="Subscribe with Youdao" href="http://reader.youdao.com/b.do?url=http://www.wowhead-tooltips.com/feed/"> Youdao</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Xian Guo" href="http://www.xianguo.com/subscribe.php?url=http://www.wowhead-tooltips.com/feed/"> Xian Guo</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Zhua Xia" href="http://www.zhuaxia.com/add_channel.php?url=http://www.wowhead-tooltips.com/feed/"> Zhua Xia</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Google" href="http://fusion.google.com/add?feedurl=http://www.wowhead-tooltips.com/feed/"> Google</a></li>
+								<li><a rel="external nofollow" title="Subscribe with My Yahoo!" href="http://add.my.yahoo.com/rss?url=http://www.wowhead-tooltips.com/feed/"> My Yahoo!</a></li>
+								<li><a rel="external nofollow" title="Subscribe with newsgator" href="http://www.newsgator.com/ngs/subscriber/subfext.aspx?url=http://www.wowhead-tooltips.com/feed/"> newsgator</a></li>
+								<li><a rel="external nofollow" title="Subscribe with Bloglines" href="http://www.bloglines.com/sub/http://www.wowhead-tooltips.com/feed/"> Bloglines</a></li>
+								<li><a rel="external nofollow" title="Subscribe with iNezha" href="http://inezha.com/add?url=http://www.wowhead-tooltips.com/feed/"> iNezha</a></li>
+							</ul>
+											</li>
+
+				</ul>
+				<!-- navigation END -->
+
+			</div>
+		</div>
+	</div>
+	<!-- header END -->
+
+	<div id="container">
+		<div id="content">
+			<div id="main">
+
+
+					<div class="post">
+				<div class="title">
+					<h2>Site Database</h2>
+					<div class="fixed"></div>
+				</div>
+				<div class="info">
+										<span>Update: January 6th, 2010</span>
+					<div class="fixed"></div>
+				</div>
+				<div class="content">
+					<div align="center"><a title="4 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=a&start=0">A</a> | <a title="3 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=b&start=0">B</a> | <a title="7 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=c&start=0">C</a> | <a title="9 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=d&start=0">D</a> | <a title="3 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=e&start=0">E</a> | <a title="2 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=f&start=0">F</a> | <a title="1 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=g&start=0">G</a> | <a title="1 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=h&start=0">H</a> | <a title="5 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=i&start=0">I</a> | J | <a title="3 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=k&start=0">K</a> | <a title="1 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=l&start=0">L</a> | <a title="2 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=m&start=0">M</a> | <a title="1 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=n&start=0">N</a> | <a title="3 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=o&start=0">O</a> | <a title="7 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=p&start=0">P</a> | Q | <a title="4 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=r&start=0">R</a> | <a title="12 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=s&start=0">S</a> | <a title="9 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=t&start=0">T</a> | U | <a title="1 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=v&start=0">V</a> | <a title="3 Entries" href="http://wowhead-tooltips.com/sitedb/?chr=w&start=0">W</a> | X | Y | Z | <a href="http://wowhead-tooltips.com/sitedb/">Reset</a>		<br /><br />
+		<table width="95%" cellspacing="2" cellpadding="0">
+			<tr>
+				<th width="5%">&nbsp;</th>
+				<th width="45">Name</th>
+				<th width="10%" align="center">Region</th>
+				<th width="30%" align="center">Realm</th>
+				<th width="10%" align="center">Hits</th>
+			</tr>
+									<tr>
+							<td align="center" valign="middle"><img src="http://wowhead-tooltips.com/wp-content/plugins/sitedb/images/alliance.gif" alt="ALLIANCE" /></td>
+							<td><a href="http://wowhead-tooltips.com/sitedb/?out=112">Killem All</a></td>
+							<td align="center">US</td>
+							<td align="center">Runetotem</td>
+							<td align="center">90</td>
+						</tr>
+												<tr>
+							<td align="center" valign="middle"><img src="http://wowhead-tooltips.com/wp-content/plugins/sitedb/images/alliance.gif" alt="Alliance" /></td>
+							<td><a href="http://wowhead-tooltips.com/sitedb/?out=136">Kitty's WoW</a></td>
+							<td align="center">US</td>
+							<td align="center">Vek'nilash</td>
+							<td align="center">68</td>
+						</tr>
+												<tr>
+							<td align="center" valign="middle"><img src="http://wowhead-tooltips.com/wp-content/plugins/sitedb/images/alliance.gif" alt="Alliance" /></td>
+							<td><a href="http://wowhead-tooltips.com/sitedb/?out=119">Knights of Saxony (KoS)</a></td>
+							<td align="center">EU</td>
+							<td align="center">Arthas</td>
+							<td align="center">51</td>
+						</tr>
+								</table>
+		<div class="tablenav-pages">Viewing Page 1 of 4 (81 Total) <a href="/tools/sitedb/?chr=k&start=25">Next &raquo;</a></div></div><div align="center">Add your site by going <a href="/tools/sitedb/?chr=k&start=0&action=add">here</a>.</div>					<div class="fixed"></div>
+				</div>
+			</div>
+
+
+<script type="text/javascript" src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/js/comment.js"></script>
+
+
+
+<!--
+	<div class="messagebox">
+		<div class="content small">
+			Comments are closed.		</div>
+	</div>
+-->
+
+
+			</div>
+
+	<!-- sidebar START -->
+<div id="sidebar">
+
+<!-- Style Switcher START -->
+<!-- Style Switcher END -->
+
+		<!-- showcase -->
+		
+		<ul id="widgets">
+
+<li class="widget widget_wht_stats_init"><h3>Script Statistics</h3><br /><div align="center"><table border="0" cellspacing="0" cellpadding="0"><tr><td style="text-align: left; font-weight: bold;">Characters Used:</td><td style="text-align: center;">666,880</td></tr><tr><td style="text-align: left; font-weight: bold;">Lines of Code:</td><td style="text-align: center;">20,802</td></tr><tr><td style="text-align: left; font-weight: bold;">Number of Directories:</td><td style="text-align: center;">8</td></tr><tr><td style="text-align: left; font-weight: bold;">Number of Files:</td><td style="text-align: center;">133</td></tr><tr><td style="text-align: left; font-weight: bold;">Total Size:</td><td style="text-align: center;">631.07 kb</td></tr>
+	<tr><td style="text-align: left; font-weight: bold;">Total Downloads:</td><td style="text-align: center;">14,243</td></tr>
+	<tr><td style="text-align: left; font-weight: bold;">Total Releases:</td><td style="text-align: center;">120</td></tr></table></div><br /></li><li class="widget GaboinkedChipinWidget_display"><h3>Wowhead Tooltips</h3><div align="center"><embed src="http://widget.chipin.com/widget/id/6c9e44b5a850b8c9 "flashVars="event_title=Script Development&event_desc=Donate to help offset the costs of development and hosting for this script.  Any donations made go directly to pay for the website and anything related to it.&color_scheme=gray" type="application/x-shockwave-flash" allowScriptAccess="always" wmode="transparent" width="250" height="250"></embed></div><br /><div align="center"><a href="http://amzn.com/w/2V74SGTVB9JEL">Use my Amazon Wishlist Instead</a></div><br /><br /></li><li class="widget widget_global_translator"><h3>Translator</h3>
+<!--FLAG_BAR_BEGIN--><div align="center"><table border='0'><tr><td><a id='flag_en' href='http://www.wowhead-tooltips.com/tools/sitedb/?chr=k&start=0' hreflang='en' ><img id='flag_img_en' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_en.png' alt='English flag' title='English'  border='0' /></a></td><td><a id='flag_it' href='http://www.wowhead-tooltips.com/it/tools/sitedb/?chr=k&start=0' hreflang='it' ><img id='flag_img_it' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_it.png' alt='Italian flag' title='Italian'  border='0' /></a></td><td><a id='flag_ko' href='http://www.wowhead-tooltips.com/ko/tools/sitedb/?chr=k&start=0' hreflang='ko' ><img id='flag_img_ko' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ko.png' alt='Korean flag' title='Korean'  border='0' /></a></td><td><a id='flag_zh-CN' href='http://www.wowhead-tooltips.com/zh-CN/tools/sitedb/?chr=k&start=0' hreflang='zh-CN' ><img id='flag_img_zh-CN' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_zh-CN.png' alt='Chinese (Simplified) flag' title='Chinese (Simplified)'  border='0' /></a></td><td><a id='flag_zh-TW' href='http://www.wowhead-tooltips.com/zh-TW/tools/sitedb/?chr=k&start=0' hreflang='zh-TW' ><img id='flag_img_zh-TW' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_zh-TW.png' alt='Chinese (Traditional) flag' title='Chinese (Traditional)'  border='0' /></a></td><td><a id='flag_pt' href='http://www.wowhead-tooltips.com/pt/tools/sitedb/?chr=k&start=0' hreflang='pt' ><img id='flag_img_pt' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_pt.png' alt='Portuguese flag' title='Portuguese'  border='0' /></a></td><td><a id='flag_de' href='http://www.wowhead-tooltips.com/de/tools/sitedb/?chr=k&start=0' hreflang='de' ><img id='flag_img_de' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_de.png' alt='German flag' title='German'  border='0' /></a></td><td><a id='flag_fr' href='http://www.wowhead-tooltips.com/fr/tools/sitedb/?chr=k&start=0' hreflang='fr' ><img id='flag_img_fr' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_fr.png' alt='French flag' title='French'  border='0' /></a></td><td><a id='flag_es' href='http://www.wowhead-tooltips.com/es/tools/sitedb/?chr=k&start=0' hreflang='es' ><img id='flag_img_es' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_es.png' alt='Spanish flag' title='Spanish'  border='0' /></a></td><td><a id='flag_ja' href='http://www.wowhead-tooltips.com/ja/tools/sitedb/?chr=k&start=0' hreflang='ja' ><img id='flag_img_ja' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ja.png' alt='Japanese flag' title='Japanese'  border='0' /></a></td><td><a id='flag_ar' href='http://www.wowhead-tooltips.com/ar/tools/sitedb/?chr=k&start=0' hreflang='ar' ><img id='flag_img_ar' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ar.png' alt='Arabic flag' title='Arabic'  border='0' /></a></td><td><a id='flag_ru' href='http://www.wowhead-tooltips.com/ru/tools/sitedb/?chr=k&start=0' hreflang='ru' ><img id='flag_img_ru' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ru.png' alt='Russian flag' title='Russian'  border='0' /></a></td></tr><tr><td><a id='flag_el' href='http://www.wowhead-tooltips.com/el/tools/sitedb/?chr=k&start=0' hreflang='el' ><img id='flag_img_el' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_el.png' alt='Greek flag' title='Greek'  border='0' /></a></td><td><a id='flag_nl' href='http://www.wowhead-tooltips.com/nl/tools/sitedb/?chr=k&start=0' hreflang='nl' ><img id='flag_img_nl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_nl.png' alt='Dutch flag' title='Dutch'  border='0' /></a></td><td><a id='flag_bg' href='http://www.wowhead-tooltips.com/bg/tools/sitedb/?chr=k&start=0' hreflang='bg' ><img id='flag_img_bg' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_bg.png' alt='Bulgarian flag' title='Bulgarian'  border='0' /></a></td><td><a id='flag_cs' href='http://www.wowhead-tooltips.com/cs/tools/sitedb/?chr=k&start=0' hreflang='cs' ><img id='flag_img_cs' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_cs.png' alt='Czech flag' title='Czech'  border='0' /></a></td><td><a id='flag_hr' href='http://www.wowhead-tooltips.com/hr/tools/sitedb/?chr=k&start=0' hreflang='hr' ><img id='flag_img_hr' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_hr.png' alt='Croatian flag' title='Croatian'  border='0' /></a></td><td><a id='flag_da' href='http://www.wowhead-tooltips.com/da/tools/sitedb/?chr=k&start=0' hreflang='da' ><img id='flag_img_da' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_da.png' alt='Danish flag' title='Danish'  border='0' /></a></td><td><a id='flag_fi' href='http://www.wowhead-tooltips.com/fi/tools/sitedb/?chr=k&start=0' hreflang='fi' ><img id='flag_img_fi' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_fi.png' alt='Finnish flag' title='Finnish'  border='0' /></a></td><td><a id='flag_hi' href='http://www.wowhead-tooltips.com/hi/tools/sitedb/?chr=k&start=0' hreflang='hi' ><img id='flag_img_hi' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_hi.png' alt='Hindi flag' title='Hindi'  border='0' /></a></td><td><a id='flag_pl' href='http://www.wowhead-tooltips.com/pl/tools/sitedb/?chr=k&start=0' hreflang='pl' ><img id='flag_img_pl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_pl.png' alt='Polish flag' title='Polish'  border='0' /></a></td><td><a id='flag_ro' href='http://www.wowhead-tooltips.com/ro/tools/sitedb/?chr=k&start=0' hreflang='ro' ><img id='flag_img_ro' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ro.png' alt='Romanian flag' title='Romanian'  border='0' /></a></td><td><a id='flag_sv' href='http://www.wowhead-tooltips.com/sv/tools/sitedb/?chr=k&start=0' hreflang='sv' ><img id='flag_img_sv' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sv.png' alt='Swedish flag' title='Swedish'  border='0' /></a></td><td><a id='flag_no' href='http://www.wowhead-tooltips.com/no/tools/sitedb/?chr=k&start=0' hreflang='no' ><img id='flag_img_no' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_no.png' alt='Norwegian flag' title='Norwegian'  border='0' /></a></td></tr><tr><td><a id='flag_ca' href='http://www.wowhead-tooltips.com/ca/tools/sitedb/?chr=k&start=0' hreflang='ca' ><img id='flag_img_ca' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ca.png' alt='Catalan flag' title='Catalan'  border='0' /></a></td><td><a id='flag_tl' href='http://www.wowhead-tooltips.com/tl/tools/sitedb/?chr=k&start=0' hreflang='tl' ><img id='flag_img_tl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_tl.png' alt='Filipino flag' title='Filipino'  border='0' /></a></td><td><a id='flag_iw' href='http://www.wowhead-tooltips.com/iw/tools/sitedb/?chr=k&start=0' hreflang='iw' ><img id='flag_img_iw' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_iw.png' alt='Hebrew flag' title='Hebrew'  border='0' /></a></td><td><a id='flag_id' href='http://www.wowhead-tooltips.com/id/tools/sitedb/?chr=k&start=0' hreflang='id' ><img id='flag_img_id' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_id.png' alt='Indonesian flag' title='Indonesian'  border='0' /></a></td><td><a id='flag_lv' href='http://www.wowhead-tooltips.com/lv/tools/sitedb/?chr=k&start=0' hreflang='lv' ><img id='flag_img_lv' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_lv.png' alt='Latvian flag' title='Latvian'  border='0' /></a></td><td><a id='flag_lt' href='http://www.wowhead-tooltips.com/lt/tools/sitedb/?chr=k&start=0' hreflang='lt' ><img id='flag_img_lt' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_lt.png' alt='Lithuanian flag' title='Lithuanian'  border='0' /></a></td><td><a id='flag_sr' href='http://www.wowhead-tooltips.com/sr/tools/sitedb/?chr=k&start=0' hreflang='sr' ><img id='flag_img_sr' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sr.png' alt='Serbian flag' title='Serbian'  border='0' /></a></td><td><a id='flag_sk' href='http://www.wowhead-tooltips.com/sk/tools/sitedb/?chr=k&start=0' hreflang='sk' ><img id='flag_img_sk' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sk.png' alt='Slovak flag' title='Slovak'  border='0' /></a></td><td><a id='flag_sl' href='http://www.wowhead-tooltips.com/sl/tools/sitedb/?chr=k&start=0' hreflang='sl' ><img id='flag_img_sl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sl.png' alt='Slovenian flag' title='Slovenian'  border='0' /></a></td><td><a id='flag_uk' href='http://www.wowhead-tooltips.com/uk/tools/sitedb/?chr=k&start=0' hreflang='uk' ><img id='flag_img_uk' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_uk.png' alt='Ukrainian flag' title='Ukrainian'  border='0' /></a></td><td><a id='flag_vi' href='http://www.wowhead-tooltips.com/vi/tools/sitedb/?chr=k&start=0' hreflang='vi' ><img id='flag_img_vi' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_vi.png' alt='Vietnamese flag' title='Vietnamese'  border='0' /></a></td><td><a id='flag_sq' href='http://www.wowhead-tooltips.com/sq/tools/sitedb/?chr=k&start=0' hreflang='sq' ><img id='flag_img_sq' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_sq.png' alt='Albanian flag' title='Albanian'  border='0' /></a></td></tr><tr><td><a id='flag_et' href='http://www.wowhead-tooltips.com/et/tools/sitedb/?chr=k&start=0' hreflang='et' ><img id='flag_img_et' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_et.png' alt='Estonian flag' title='Estonian'  border='0' /></a></td><td><a id='flag_gl' href='http://www.wowhead-tooltips.com/gl/tools/sitedb/?chr=k&start=0' hreflang='gl' ><img id='flag_img_gl' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_gl.png' alt='Galician flag' title='Galician'  border='0' /></a></td><td><a id='flag_mt' href='http://www.wowhead-tooltips.com/mt/tools/sitedb/?chr=k&start=0' hreflang='mt' ><img id='flag_img_mt' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_mt.png' alt='Maltese flag' title='Maltese'  border='0' /></a></td><td><a id='flag_th' href='http://www.wowhead-tooltips.com/th/tools/sitedb/?chr=k&start=0' hreflang='th' ><img id='flag_img_th' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_th.png' alt='Thai flag' title='Thai'  border='0' /></a></td><td><a id='flag_tr' href='http://www.wowhead-tooltips.com/tr/tools/sitedb/?chr=k&start=0' hreflang='tr' ><img id='flag_img_tr' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_tr.png' alt='Turkish flag' title='Turkish'  border='0' /></a></td><td><a id='flag_hu' href='http://www.wowhead-tooltips.com/hu/tools/sitedb/?chr=k&start=0' hreflang='hu' ><img id='flag_img_hu' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_hu.png' alt='Hungarian flag' title='Hungarian'  border='0' /></a></td><td><a id='flag_be' href='http://www.wowhead-tooltips.com/be/tools/sitedb/?chr=k&start=0' hreflang='be' ><img id='flag_img_be' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_be.png' alt='Belarus flag' title='Belarus'  border='0' /></a></td><td><a id='flag_ga' href='http://www.wowhead-tooltips.com/ga/tools/sitedb/?chr=k&start=0' hreflang='ga' ><img id='flag_img_ga' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ga.png' alt='Irish flag' title='Irish'  border='0' /></a></td><td><a id='flag_is' href='http://www.wowhead-tooltips.com/is/tools/sitedb/?chr=k&start=0' hreflang='is' ><img id='flag_img_is' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_is.png' alt='Icelandic flag' title='Icelandic'  border='0' /></a></td><td><a id='flag_mk' href='http://www.wowhead-tooltips.com/mk/tools/sitedb/?chr=k&start=0' hreflang='mk' ><img id='flag_img_mk' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_mk.png' alt='Macedonian flag' title='Macedonian'  border='0' /></a></td><td><a id='flag_ms' href='http://www.wowhead-tooltips.com/ms/tools/sitedb/?chr=k&start=0' hreflang='ms' ><img id='flag_img_ms' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_ms.png' alt='Malay flag' title='Malay'  border='0' /></a></td><td><a id='flag_fa' href='http://www.wowhead-tooltips.com/fa/tools/sitedb/?chr=k&start=0' hreflang='fa' ><img id='flag_img_fa' src='http://www.wowhead-tooltips.com/wp-content/plugins/global-translator/flag_fa.png' alt='Persian flag' title='Persian'  border='0' /></a></td></tr></table></div><!--FLAG_BAR_END-->
+</li><li class="widget widget_twitter"><h3><a href="http://twitter.com/wowheadtooltips" class="twitter_title_link">Twitter</a></h3><ul class="twitter"><li class="twitter-item"> <a href="http://twitter.com/#search?q=wow" class="twitter-link">#wow</a> The Daily Quest: A little too real for me <a href="http://bit.ly/dqwMen" class="twitter-link">http://bit.ly/dqwMen</a>  <span class="twitter-timestamp"><abbr title="2010/06/24 01:02:23">17 mins ago</abbr></span></li><li class="twitter-item"> <a href="http://twitter.com/#search?q=wow" class="twitter-link">#wow</a> Spiritual Guidance: A shadowy work in progress <a href="http://bit.ly/aSFMT6" class="twitter-link">http://bit.ly/aSFMT6</a>  <span class="twitter-timestamp"><abbr title="2010/06/24 00:29:36">50 mins ago</abbr></span></li><li class="twitter-item"> <a href="http://twitter.com/#search?q=wow" class="twitter-link">#wow</a> Encrypted Text: The new style of rogue PvP <a href="http://bit.ly/9WE0AF" class="twitter-link">http://bit.ly/9WE0AF</a>  <span class="twitter-timestamp"><abbr title="2010/06/23 23:25:17">2 hours ago</abbr></span></li><li class="twitter-item"> <a href="http://twitter.com/#search?q=wow" class="twitter-link">#wow</a> Choose My Adventure: Letters home <a href="http://bit.ly/dgRNTl" class="twitter-link">http://bit.ly/dgRNTl</a>  <span class="twitter-timestamp"><abbr title="2010/06/23 22:19:25">3 hours ago</abbr></span></li><li class="twitter-item"> Slashdot: Skype Releases Open SDK <a href="http://bit.ly/cjOYJ8" class="twitter-link">http://bit.ly/cjOYJ8</a>  <span class="twitter-timestamp"><abbr title="2010/06/23 21:30:54">4 hours ago</abbr></span></li></ul></li><li class="widget widget_archive"><h3>Archives</h3>		<ul>
+			<li><a href='http://www.wowhead-tooltips.com/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/11/' title='November 2009'>November 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/10/' title='October 2009'>October 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/09/' title='September 2009'>September 2009</a></li>
+	<li><a href='http://www.wowhead-tooltips.com/2009/08/' title='August 2009'>August 2009</a></li>
+		</ul>
+</li><li class="widget widget_links"><h3>Links</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.wowhead-tooltips.com/?KxLyYsi3" title="jQuery plugin that actually handles the displaying of the tooltips for the armory and guild modules." target="_blank">ClueTip</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?e0NeqOIg" title="My website.">craCkpot dot ws</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?yDMVLNqB" title="JavaScript library used by this script for various things." target="_blank">jQuery</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?LpdhEVTz" title="The most popular open source database engine on the net!  Used by the script for caching.">MySQL</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?S4HgtTXe" title="PHP: Hypertext Preprocessor.  The code behind this script.">PHP</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?aj4iw4Ja" title="The operating system used to develop this script.  Amazing distribution of the Linux operating system." target="_blank">Ubuntu Linux</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?U2iECrRk" title="If you&#8217;re not sure about this game then this script can&#8217;t help you.">World of Warcraft</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?3Q6VoTRI" title="The site this script uses to make the tooltips.  The best Wow-related site on the net!" target="_blank">Wowhead</a></li>
+<li><a href="http://www.wowhead-tooltips.com/?CWIPQcJr" title="Easy to install Apache web server that includes PHP 5.3, MySQL 5.x, phpMyAdmin, FTP, amongst other additions, and it works for Windows and *nix.  Runs the testing environment for this script." target="_blank">XAMPP</a></li>
+
+	</ul>
+</li>
+<li class="widget widget_meta"><h3>Miscellaneous</h3>			<ul>
+			<li><a href="http://www.wowhead-tooltips.com/wp-login.php?action=register">Register</a></li>			<li><a href="http://www.wowhead-tooltips.com/wp-login.php">Log in</a></li>
+			<li><a href="http://www.wowhead-tooltips.com/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.wowhead-tooltips.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</li>		</ul>
+
+		<!-- showcase 2 -->
+		
+</div>
+<!-- sidebar END -->
+
+	<div class="fixed"></div>
+
+		<div id="bottom">
+
+<script src="http://cdn.wibiya.com/Loaders/Loader_35127.js" type="text/javascript"></script>			<div class="anchor">
+				<span><a href="#" onclick="MGJS.goTop();return false;">TOP</a></span>
+			</div>
+			<div class="fixed"></div>
+			</div>
+		<div class="fixed"></div>
+	</div>
+</div>
+
+<!-- footer START -->
+<div id="footer">
+	<div class="inner">
+		<div class="content">
+			<p id="about">
+				Copyright &copy; 2009-2010 Wowhead Tooltips | Powered by <a href="http://wordpress.org/">WordPress</a> | Theme by <a href="http://www.neoease.com/">NeoEase</a> | <a href="http://www.bad-behavior.ioerror.us/">Bad Behavior</a> has blocked <strong>897</strong> access attempts in the last 7 days.				<br/><br/>
+				<a href="http://www.php.net" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/php5.png" alt="" border="0" /></a>&nbsp;
+				<a href="http://www.mysql.com" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/mysql.png" alt="" border="0" /></a>&nbsp;
+				<a href="http://www.apachefriends.org/en/xampp.html" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/xampp.gif" alt="" border="0" /></a>&nbsp;
+				<a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/xhtml.png" alt="" border="0" /></a>&nbsp;
+				<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="http://www.wowhead-tooltips.com/wp-content/themes/elegant-box/images/css.png" alt="" border="0" /></a>
+			</p>
+
+			<ul id="admin">
+				<li><a href="http://www.wowhead-tooltips.com/wp-login.php?action=register">Register</a></li>				<li><a href="http://www.wowhead-tooltips.com/wp-login.php">Log in</a></li>
+			</ul>
+
+			<div class="fixed"></div>
+		</div>
+	</div>
+</div>
+<!-- footer END -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10454509-1");
+pageTracker._trackPageview();
+} catch(err) {}</script></body>
+</html>
